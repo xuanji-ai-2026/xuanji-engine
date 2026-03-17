@@ -1,5 +1,5 @@
 """
-玄玑引擎 - API服务入口（简化版）
+玄玑引擎 - API服务入口
 """
 
 from fastapi import FastAPI
@@ -32,6 +32,9 @@ def root():
             "巨门星": "记忆系统",
             "武曲星": "插件系统",
             "廉贞星": "人格引擎"
+        },
+        "integrations": {
+            "飞书机器人": "/webhook/feishu"
         }
     }
 
@@ -39,13 +42,9 @@ def root():
 def health():
     return {"status": "healthy"}
 
-@app.get("/api/v1/status")
-def api_status():
-    return {
-        "engine": "玄玑引擎",
-        "version": "0.1.0",
-        "status": "运行中"
-    }
+# 导入飞书机器人
+from src.bifei.feishu_bot import create_feishu_routes
+create_feishu_routes(app)
 
 if __name__ == "__main__":
     import uvicorn
