@@ -128,7 +128,9 @@ def create_feishu_routes(app: FastAPI):
         # URL验证（首次配置时需要）
         if data.get("type") == "url_verification":
             challenge = data.get("challenge", "")
-            return JSONResponse({"challenge": challenge})
+            return JSONResponse({
+                "challenge": challenge
+            })
         
         # 处理事件
         result = await handle_feishu_event(data)
