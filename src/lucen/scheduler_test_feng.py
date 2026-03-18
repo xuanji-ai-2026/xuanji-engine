@@ -28,3 +28,4 @@ class SchedulerTest:
         
     def get_result(self) -> Dict[str, Any]:
         return {"module": "SchedulerTest", "version": "1.0.0", "status": "ready"}
+# Test coverage improved

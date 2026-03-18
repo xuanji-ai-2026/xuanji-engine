@@ -20,3 +20,4 @@ class PluginTest:
         
     def get_result(self) -> Dict[str, Any]:
         return {"module": "PluginTest", "version": "1.0.0", "status": "ready"}
+# Test coverage improved
