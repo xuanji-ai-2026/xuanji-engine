@@ -158,6 +158,154 @@ class DigitalPersona(BaseModel):
         arbitrary_types_allowed = True
 
 
+class DialogueManager:
+    """对话管理器 - 管理多个对话会话和流程"""
+    
+    def __init__(self):
+        self.dialogue_engine = DialogueEngine()
+        self.tts_engine = TTSEngine()
+        self.asr_engine = ASREngine()
+        self.persona_manager = DigitalPersonaManager()
+        self.active_dialogues: Dict[str, Dict] = {}
+    
+    async def start_dialogue(
+        self,
+        session_id: str,
+        user_id: str,
+        persona_id: str = "default"
+    ) -> Dict:
+        """开始对话"""
+        # 创建会话
+        session = self.dialogue_engine.create_session(session_id, user_id)
+        
+        # 获取数字人
+        persona = self.persona_manager.get_persona(persona_id)
+        
+        # 记录活跃对话
+        self.active_dialogues[session_id] = {
+            "session_id": session_id,
+            "user_id": user_id,
+            "persona_id": persona_id,
+            "persona": persona,
+            "start_time": asyncio.get_event_loop().time(),
+            "message_count": 1
+        }
+        
+        return {
+            "session_id": session_id,
+            "persona": persona.dict() if persona else None,
+            "status": "started"
+        }
+    
+    async def send_message(
+        self,
+        session_id: str,
+        message: str,
+        role: str = "user"
+    ) -> Dict:
+        """发送消息"""
+        # 添加消息到会话
+        success = self.dialogue_engine.add_message(
+            session_id,
+            MessageRole.USER if role == "user" else MessageRole.ASSISTANT,
+            message
+        )
+        
+        if not success:
+            return {"status": "error", "message": "Session not found"}
+        
+        # 更新对话统计
+        if session_id in self.active_dialogues:
+            self.active_dialogues[session_id]["message_count"] += 1
+        
+        # 获取对话历史
+        history = self.dialogue_engine.get_history(session_id)
+        
+        # 模拟AI响应（实际接入DeepSeek）
+        response = self._generate_response(history)
+        
+        # 添加AI回复
+        self.dialogue_engine.add_message(
+            session_id,
+            MessageRole.ASSISTANT,
+            response
+        )
+        
+        return {
+            "status": "success",
+            "response": response,
+            "message_count": len(history)
+        }
+    
+    async def send_audio_message(
+        self,
+        session_id: str,
+        audio_data: str
+    ) -> Dict:
+        """发送语音消息（ASR + 对话 + TTS）"""
+        # 语音识别
+        asr_result = await self.asr_engine.recognize(
+            ASRRequest(audio_data=audio_data)
+        )
+        
+        if asr_result.confidence < 0.7:
+            return {
+                "status": "error",
+                "message": "语音识别置信度低",
+                "confidence": asr_result.confidence
+            }
+        
+        # 文本对话
+        dialogue_result = await self.send_message(
+            session_id,
+            asr_result.text
+        )
+        
+        # 语音合成
+        tts_result = await self.tts_engine.synthesize(
+            TTSRequest(text=dialogue_result["response"])
+        )
+        
+        return {
+            "status": "success",
+            "recognized_text": asr_result.text,
+            "confidence": asr_result.confidence,
+            "response": dialogue_result["response"],
+            "audio_base64": tts_result.audio_base64,
+            "audio_format": tts_result.format,
+            "duration": tts_result.duration
+        }
+    
+    def get_dialogue_state(self, session_id: str) -> Dict:
+        """获取对话状态"""
+        session = self.active_dialogues.get(session_id)
+        if not session:
+            return {"status": "error", "message": "Dialogue not found"}
+        
+        history = self.dialogue_engine.get_history(session_id)
+        
+        return {
+            "status": "success",
+            "session_id": session_id,
+            "persona": session["persona"].dict() if session.get("persona") else None,
+            "message_count": session["message_count"],
+            "duration": asyncio.get_event_loop().time() - session["start_time"]
+        }
+    
+    async def end_dialogue(self, session_id: str) -> bool:
+        """结束对话"""
+        success = self.dialogue_engine.clear_session(session_id)
+        if session_id in self.active_dialogues:
+            del self.active_dialogues[session_id]
+        return success
+    
+    def _generate_response(self, history: List[Message]) -> str:
+        """生成AI响应"""
+        # 这里接入DeepSeek API进行实际对话
+        # 当前返回模拟响应
+        return "这是AI的回复。实际开发中将接入DeepSeek API。"
+
+
 class DigitalPersonaManager:
     """数字人管理器"""
     

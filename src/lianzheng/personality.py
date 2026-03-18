@@ -66,6 +66,7 @@ class PersonalityEngine:
         self.configs: Dict[str, PersonaConfig] = {}
         self.active_persona: Optional[PersonaConfig] = None
         self.emotion_engine = EmotionEngine()
+        self.empathy_model = EmpathyModel()
         
         # 加载默认配置
         if config_path and os.path.exists(config_path):
@@ -151,6 +152,115 @@ class PersonalityEngine:
         }
         
         return style_map.get(emotion, style_map[EmotionState.NEUTRAL])
+    
+    def analyze_user_emotion(self, text: str) -> EmotionState:
+        """分析用户情绪"""
+        # 简化实现：基于关键词检测
+        keywords = {
+            EmotionState.HAPPY: ["开心", "高兴", "快乐", "满意", "喜欢"],
+            EmotionState.SAD: ["难过", "伤心", "悲伤", "痛苦", "失望"],
+            EmotionState.ANGRY: ["生气", "愤怒", "烦", "讨厌", "不满"],
+            EmotionState.FEAR: ["害怕", "担心", "紧张", "恐惧", "焦虑"],
+            EmotionState.SURPRISE: ["惊讶", "意外", "震惊", "不可思议"],
+            EmotionState.NEUTRAL: ["好的", "收到", "明白", "可以", "了解"]
+        }
+        
+        for emotion, words in keywords.items():
+            for word in words:
+                if word in text:
+                    return emotion
+        
+        return EmotionState.NEUTRAL
+
+
+class EmpathyModel(BaseModel):
+    """共情模型 - 理解并回应用户情绪"""
+    
+    def __init__(self):
+        self.emotion_keywords = {
+            "positive": ["好", "棒", "优秀", "厉害", "开心", "高兴", "喜欢", "满意", "不错"],
+            "negative": ["不好", "差", "糟", "烦", "生气", "讨厌", "失望", "痛苦", "难过"],
+            "neutral": ["好的", "收到", "明白", "可以", "了解", "嗯", "哦"]
+        }
+        
+        self.empathy_responses = {
+            EmotionState.HAPPY: [
+                "太好了！听到你这么开心我也很愉快！",
+                "这个消息真不错！继续保持！",
+                "我很高兴能帮到你！"
+            ],
+            EmotionState.SAD: [
+                "我理解你现在的感受，如果需要倾诉我随时在这里。",
+                "这确实让人难过，不过我相信你能度过难关。",
+                "别担心，一切都会好起来的。"
+            ],
+            EmotionState.ANGRY: [
+                "我理解你的不满，让我们一起看看如何解决。",
+                "这种情况确实令人沮丧，冷静一下我们慢慢处理。",
+                "我明白你的感受，让我们一起想办法。"
+            ],
+            EmotionState.FEAR: [
+                "别担心，有我在这里陪着你。",
+                "这种情况虽然让人紧张，但我们会一起面对。",
+                "深呼吸，一步步来，没问题的。"
+            ],
+            EmotionState.SURPRISE: [
+                "这确实让人意外！让我们仔细看看。",
+                "哇，这很有意思！",
+                "我也没想到会是这样的结果。"
+            ],
+            EmotionState.NEUTRAL: [
+                "好的，我明白了。",
+                "收到，继续吧。",
+                "了解了，有什么我可以帮你的？"
+            ]
+        }
+    
+    def detect_emotion(self, text: str) -> EmotionState:
+        """检测文本中的情绪"""
+        for emotion, keywords in self.emotion_keywords.items():
+            if isinstance(emotion, str):
+                # 对于简单的字符串key，暂时映射
+                pass
+        
+        # 基于关键词检测
+        lower_text = text.lower()
+        if any(word in lower_text for word in self.emotion_keywords["positive"]):
+            return EmotionState.HAPPY
+        elif any(word in lower_text for word in self.emotion_keywords["negative"]):
+            return EmotionState.SAD
+        elif any(word in lower_text for word in self.emotion_keywords["neutral"]):
+            return EmotionState.NEUTRAL
+        
+        return EmotionState.NEUTRAL
+    
+    def generate_empathetic_response(
+        self,
+        emotion: EmotionState,
+        context: str = ""
+    ) -> str:
+        """生成共情回复"""
+        responses = self.empathy_responses.get(emotion, [])
+        
+        if not responses:
+            return "我理解你的感受。"
+        
+        # 根据上下文选择最合适的回复
+        import random
+        return random.choice(responses)
+    
+    def analyze_emotion_intensity(self, text: str) -> float:
+        """分析情绪强度（0.0-1.0）"""
+        # 简化实现：基于标点和特殊符号
+        intensity_indicators = ["!", "！", "~~~", "...", "???", "!!!"]
+        count = sum(1 for indicator in intensity_indicators if indicator in text)
+        return min(1.0, count * 0.3)
+    
+    def should_apply_empathy(self, persona_config: PersonaConfig) -> bool:
+        """判断是否应该应用共情"""
+        if not persona_config:
+            return False
+        return persona_config.empathy_enabled
 
 
 # 测试代码
