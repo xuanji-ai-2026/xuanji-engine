@@ -156,6 +156,167 @@ class MultiTenantManager:
         return self.tenants.get(tenant_id)
 
 
+class K8sDeployer(BaseModel):
+    """K8s部署器 - 负责应用部署和管理"""
+    
+    def __init__(self, namespace: str = "xuanji"):
+        self.namespace = namespace
+        self.generator = K8sManifestGenerator(namespace)
+        self.deployed_apps: Dict[str, Dict] = {}
+    
+    def deploy_application(
+        self,
+        name: str,
+        image: str,
+        replicas: int = 1,
+        ports: List[int] = None,
+        env: Dict[str, str] = None,
+        create_service: bool = True,
+        create_ingress: bool = False,
+        ingress_host: str = None
+    ) -> Dict:
+        """部署应用"""
+        # 创建Deployment配置
+        deployment_config = DeploymentConfig(
+            name=name,
+            replicas=replicas,
+            containers=[
+                ContainerConfig(
+                    name=name,
+                    image=image,
+                    ports=ports or [8080],
+                    env=env or {}
+                )
+            ]
+        )
+        
+        # 生成Deployment清单
+        deployment_manifest = self.generator.generate_deployment(deployment_config)
+        
+        # 生成Service清单
+        service_manifest = None
+        if create_service:
+            service_manifest = self.generator.generate_service(name, "ClusterIP")
+        
+        # 生成Ingress清单
+        ingress_manifest = None
+        if create_ingress and ingress_host:
+            ingress_manifest = self.generator.generate_ingress(name, ingress_host)
+        
+        # 记录部署信息
+        self.deployed_apps[name] = {
+            "name": name,
+            "image": image,
+            "replicas": replicas,
+            "namespace": self.namespace,
+            "status": "deployed",
+            "deployment": deployment_manifest,
+            "service": service_manifest,
+            "ingress": ingress_manifest,
+            "deployed_at": __import__('time').time()
+        }
+        
+        return {
+            "status": "success",
+            "app_name": name,
+            "namespace": self.namespace,
+            "replicas": replicas,
+            "deployment": deployment_manifest,
+            "service": service_manifest,
+            "ingress": ingress_manifest
+        }
+    
+    def scale_application(self, name: str, replicas: int) -> bool:
+        """扩缩容应用"""
+        if name not in self.deployed_apps:
+            return False
+        
+        self.deployed_apps[name]["replicas"] = replicas
+        
+        # 更新Deployment清单
+        deployment = self.deployed_apps[name]["deployment"]
+        deployment["spec"]["replicas"] = replicas
+        
+        return True
+    
+    def rollback_application(self, name: str) -> bool:
+        """回滚应用"""
+        if name not in self.deployed_apps:
+            return False
+        
+        # 简化实现：标记为回滚状态
+        self.deployed_apps[name]["status"] = "rolling_back"
+        
+        return True
+    
+    def get_application_status(self, name: str) -> Optional[Dict]:
+        """获取应用状态"""
+        return self.deployed_apps.get(name)
+    
+    def list_applications(self) -> List[Dict]:
+        """列出所有应用"""
+        return list(self.deployed_apps.values())
+    
+    def delete_application(self, name: str) -> bool:
+        """删除应用"""
+        if name in self.deployed_apps:
+            del self.deployed_apps[name]
+            return True
+        return False
+    
+    def update_application(
+        self,
+        name: str,
+        image: str = None,
+        replicas: int = None,
+        env: Dict[str, str] = None
+    ) -> bool:
+        """更新应用"""
+        if name not in self.deployed_apps:
+            return False
+        
+        app = self.deployed_apps[name]
+        
+        if image:
+            app["image"] = image
+            # 更新容器镜像
+            app["deployment"]["spec"]["template"]["spec"]["containers"][0]["image"] = image
+        
+        if replicas:
+            app["replicas"] = replicas
+            app["deployment"]["spec"]["replicas"] = replicas
+        
+        if env:
+            # 更新环境变量
+            for container in app["deployment"]["spec"]["template"]["spec"]["containers"]:
+                if "env" not in container:
+                    container["env"] = []
+                # 合并环境变量
+                existing = {e["name"]: e["value"] for e in container["env"]}
+                existing.update(env)
+                container["env"] = [{"name": k, "value": v} for k, v in existing.items()]
+        
+        return True
+    
+    def get_pod_status(self, app_name: str) -> List[Dict]:
+        """获取Pod状态"""
+        if app_name not in self.deployed_apps:
+            return []
+        
+        replicas = self.deployed_apps[app_name]["replicas"]
+        # 模拟Pod状态
+        return [
+            {
+                "name": f"{app_name}-{i}",
+                "status": "Running",
+                "ready": True,
+                "restarts": 0,
+                "age": f"{i}m"
+            }
+            for i in range(replicas)
+        ]
+
+
 # 测试代码
 if __name__ == "__main__":
     gen = K8sManifestGenerator()
