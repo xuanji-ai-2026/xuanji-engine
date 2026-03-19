@@ -10,7 +10,7 @@ from datetime import datetime
 from typing import Dict, List
 
 # 导入各模块
-from multi_project_task_queue import create_all_projects_tasks, TaskQueue
+from multi_project_task_queue import create_all_projects_tasks, MultiProjectTaskQueue
 from code_generator import CodeGenerator
 from auto_git_commit import AutoCommitManager
 
@@ -42,6 +42,14 @@ class AIDigitalEmployeeSystem:
             "kuncanyun_saas": "/workspace/projects/workspace/kuncanyun-saas",
             "ai_stock_app": "/workspace/projects/workspace/ai-stock-app",
             "hanyu_learning": "/workspace/projects/workspace/han-yu-vietnamese-learning"
+        }
+        
+        # SSH配置映射（不同项目使用不同密钥）
+        self.ssh_configs = {
+            "xuanji_engine": "/tmp/ssh_config",
+            "kuncanyun_saas": "/tmp/ssh_config",
+            "ai_stock_app": "/tmp/ssh_config_multi",
+            "hanyu_learning": "/tmp/ssh_config"
         }
         
         # 注册Git仓库
@@ -89,13 +97,15 @@ class AIDigitalEmployeeSystem:
                 print(f"[{employee['name']}] 📝 生成代码: {file_path}")
                 self.stats["generated_files"] += 1
                 
-                # 4. 自动Git提交
+                # 4. 自动Git提交（使用项目对应的SSH配置）
                 commit_msg = f"feat({task.module}): {task.title} ({employee_id})"
+                ssh_config = self.ssh_configs.get(project, "/tmp/ssh_config")
                 result = self.git_manager.commit_to_repo(
                     project, 
                     [file_path], 
                     commit_msg, 
-                    employee_id
+                    employee_id,
+                    ssh_config
                 )
                 
                 if result["success"]:

@@ -17,7 +17,7 @@ class AutoGitCommit:
         self.ssh_config = ssh_config
         self.git_ssh_command = f"ssh -F {ssh_config} -o StrictHostKeyChecking=no"
     
-    def commit_code(self, file_paths: List[str], message: str, employee_id: str = "") -> Dict:
+    def commit_code(self, file_paths: List[str], message: str, employee_id: str = "", ssh_config: str = "") -> Dict:
         """
         自动提交代码
         
@@ -77,12 +77,13 @@ class AutoGitCommit:
             )
             commit_hash = hash_result.stdout.strip()
             
-            # 6. 推送到远程
+            # 6. 推送到远程（使用自定义SSH配置）
+            ssh_cmd = f"ssh -F {ssh_config if ssh_config else self.ssh_config} -o StrictHostKeyChecking=no"
             push_result = subprocess.run(
                 ["git", "push", "origin", "main"],
                 capture_output=True,
                 text=True,
-                env={**os.environ, "GIT_SSH_COMMAND": self.git_ssh_command}
+                env={**os.environ, "GIT_SSH_COMMAND": ssh_cmd}
             )
             
             if push_result.returncode != 0:
@@ -210,12 +211,12 @@ class AutoCommitManager:
         self.repos[name] = AutoGitCommit(path, ssh_config)
         print(f"✅ 注册仓库: {name} -> {path}")
     
-    def commit_to_repo(self, repo_name: str, files: List[str], message: str, employee_id: str = "") -> Dict:
+    def commit_to_repo(self, repo_name: str, files: List[str], message: str, employee_id: str = "", ssh_config: str = "") -> Dict:
         """提交到指定仓库"""
         if repo_name not in self.repos:
             return {"success": False, "message": f"仓库 {repo_name} 未注册"}
         
-        return self.repos[repo_name].commit_code(files, message, employee_id)
+        return self.repos[repo_name].commit_code(files, message, employee_id, ssh_config)
     
     def get_all_status(self) -> Dict:
         """获取所有仓库状态"""
