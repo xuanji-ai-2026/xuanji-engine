@@ -1,0 +1,103 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-config
+  namespace: default
+  labels:
+    app: grafana
+    version: "1.0.0"
+data:
+  grafana.ini: |
+    [server]
+    http_port = 3000
+    root_url = https://grafana.xuanji-ai.com
+    domain = grafana.xuanji-ai.com
+
+    [security]
+    admin_user = admin
+    admin_password = ${GRAFANA_ADMIN_PASSWORD}
+
+    [database]
+    type = postgres
+    host = ${GRAFANA_DB_HOST}
+    name = ${GRAFANA_DB_NAME}
+    user = ${GRAFANA_DB_USER}
+    password = ${GRAFANA_DB_PASSWORD}
+
+    [users]
+    default_theme = light
+
+    [session]
+    provider = postgres
+
+    [auth.anonymous]
+    enabled = true
+    org_name = Xuanji Engine
+    org_role = Viewer
+
+    [alerting]
+    enabled = true
+
+    [unified_alerting]
+    enabled = true
+
+  dashboards.yml: |
+    apiVersion: 1
+
+    providers:
+      - name: 'Xuanji Engine Dashboards'
+        orgId: 1
+        folder: 'Xuanji Engine'
+        type: file
+        disableDeletion: false
+        updateIntervalSeconds: 10
+        allowUiUpdates: true
+        options:
+          path: /var/lib/grafana/dashboards
+          foldersFromFilesStructure: true
+
+  datasources.yml: |
+    apiVersion: 1
+
+    datasources:
+      - name: Prometheus
+        type: prometheus
+        access: proxy
+        url: http://prometheus:9090
+        isDefault: true
+        editable: true
+        jsonData:
+          timeInterval: "15s"
+          httpMethod: POST
+
+      - name: Loki
+        type: loki
+        access: proxy
+        url: http://loki:3100
+        editable: true
+        jsonData:
+          maxLines: 1000
+
+  provisioning/alerting.yml: |
+    apiVersion: 1
+
+    contactPoints:
+      - orgId: 1
+        name: Xuanji Engine Alerts
+        receivers:
+          - name: webhook
+            webhookConfigs:
+              - url: ${ALERT_WEBHOOK_URL}
+                send_resolved: true
+
+    notification_policies:
+      - orgId: 1
+        receiver: 'webhook'
+        matchers:
+          - name: "severity"
+            value: "critical"
+        routes:
+          - receiver: 'webhook'
+            matchers:
+              - name: "severity"
+                value: "warning"
