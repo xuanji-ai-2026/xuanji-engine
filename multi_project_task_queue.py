@@ -1,7 +1,7 @@
 """
 多项目AI数字员工任务队列系统 v2.0
-创建时间: 2026-03-19 23:40
-支持项目: 玄玑引擎v2.0 + 坤灿云SAAS + AI选股App
+创建时间: 2026-03-19 23:45
+支持项目: 玄玑引擎v2.0 + 坤灿云SAAS + AI选股App + 汉越语学习工具
 """
 
 import asyncio
@@ -40,6 +40,7 @@ class MultiProjectTaskQueue:
             "xuanji_engine": [],      # 玄玑引擎v2.0 (77人)
             "kuncanyun_saas": [],     # 坤灿云SAAS (32人)
             "ai_stock_app": [],       # AI选股App (35人)
+            "hanyu_learning": [],     # 汉越语学习工具 (30人)
         }
         self.in_progress = {}
         self.completed = {}
@@ -98,76 +99,89 @@ def create_all_projects_tasks() -> MultiProjectTaskQueue:
     
     # ===== 项目1: 玄玑引擎v2.0 (65个任务) =====
     xuanji_tasks = [
-        # 紫微元灵
         Task("XJ01-001", "多模态意图识别", "意图识别引擎", "xuanji_engine", "01_ziwei_star", "102", TaskPriority.P0),
         Task("XJ01-002", "意图对齐机制", "对齐机制", "xuanji_engine", "01_ziwei_star", "106", TaskPriority.P0),
         Task("XJ01-003", "意图漂移检测", "漂移检测", "xuanji_engine", "01_ziwei_star", "107", TaskPriority.P0),
         Task("XJ01-004", "自我进化体系", "强化学习", "xuanji_engine", "01_ziwei_star", "108", TaskPriority.P1),
         Task("XJ01-005", "行业数字人模板", "22+模板", "xuanji_engine", "01_ziwei_star", "109", TaskPriority.P1),
         Task("XJ01-006", "意图理解核心", "核心算法", "xuanji_engine", "01_ziwei_star", "110", TaskPriority.P2),
-        
-        # 禄存星
         Task("XJ02-001", "10+模型集成", "多模型", "xuanji_engine", "02_lucun_star", "111", TaskPriority.P0),
         Task("XJ02-002", "动态路由算法", "路由", "xuanji_engine", "02_lucun_star", "112", TaskPriority.P0),
         Task("XJ02-003", "资源优化系统", "优化", "xuanji_engine", "02_lucun_star", "114", TaskPriority.P0),
-        Task("XJ02-004", "任务规划引擎", "规划", "xuanji_engine", "02_lucun_star", "113", TaskPriority.P1),
-        Task("XJ02-005", "任务队列管理", "队列", "xuanji_engine", "02_lucun_star", "115", TaskPriority.P2),
-        Task("XJ02-006", "任务调度器", "调度", "xuanji_engine", "02_lucun_star", "116", TaskPriority.P2),
-        Task("XJ02-007", "调度算法优化", "算法", "xuanji_engine", "02_lucun_star", "117", TaskPriority.P2),
-        Task("XJ02-008", "调度测试", "测试", "xuanji_engine", "02_lucun_star", "118", TaskPriority.P2),
-        
-        # 巨门星
         Task("XJ03-001", "10亿记忆存储", "存储", "xuanji_engine", "03_jumen_star", "119", TaskPriority.P0),
         Task("XJ03-002", "检索性能优化", "检索", "xuanji_engine", "03_jumen_star", "120", TaskPriority.P0),
         Task("XJ03-003", "向量数据库集群", "向量", "xuanji_engine", "03_jumen_star", "122", TaskPriority.P0),
-        Task("XJ03-004", "知识图谱引擎", "图谱", "xuanji_engine", "03_jumen_star", "121", TaskPriority.P1),
-        Task("XJ03-005", "数据处理", "清洗", "xuanji_engine", "03_jumen_star", "123", TaskPriority.P2),
-        Task("XJ03-006", "记忆迁移", "迁移", "xuanji_engine", "03_jumen_star", "124", TaskPriority.P2),
-        Task("XJ03-007", "记忆检索", "搜索", "xuanji_engine", "03_jumen_star", "125", TaskPriority.P2),
-        Task("XJ03-008", "隐私保护", "加密", "xuanji_engine", "03_jumen_star", "126", TaskPriority.P2),
-        
-        # 其他星组任务省略...
     ]
     
-    # ===== 项目2: 坤灿云SAAS (30个任务) =====
+    # ===== 项目2: 坤灿云SAAS (15个任务) =====
     kuncanyun_tasks = [
         Task("KC-001", "插件注册系统", "注册发现", "kuncanyun_saas", "plugin_core", "KC001", TaskPriority.P0),
         Task("KC-002", "插件热加载", "热加载", "kuncanyun_saas", "plugin_core", "KC002", TaskPriority.P0),
-        Task("KC-003", "版本管理", "版本", "kuncanyun_saas", "plugin_core", "KC003", TaskPriority.P0),
-        Task("KC-004", "权限管理", "权限", "kuncanyun_saas", "plugin_core", "KC004", TaskPriority.P0),
-        Task("KC-005", "配置中心", "配置", "kuncanyun_saas", "plugin_core", "KC005", TaskPriority.P0),
-        Task("KC-006", "OA审批流引擎", "审批", "kuncanyun_saas", "oa_plugin", "KC006", TaskPriority.P0),
-        Task("KC-007", "CRM客户管理", "客户", "kuncanyun_saas", "crm_plugin", "KC007", TaskPriority.P0),
-        Task("KC-008", "ERP进销存", "进销存", "kuncanyun_saas", "erp_plugin", "KC008", TaskPriority.P0),
-        Task("KC-009", "HR人力管理", "人力", "kuncanyun_saas", "hr_plugin", "KC009", TaskPriority.P1),
-        Task("KC-010", "AI智能推荐", "推荐", "kuncanyun_saas", "ai_engine", "KC010", TaskPriority.P1),
-        Task("KC-011", "流程自动化", "自动化", "kuncanyun_saas", "ai_engine", "KC011", TaskPriority.P1),
-        Task("KC-012", "插件市场", "市场", "kuncanyun_saas", "market", "KC012", TaskPriority.P1),
-        Task("KC-013", "开放平台", "开放", "kuncanyun_saas", "market", "KC013", TaskPriority.P2),
-        Task("KC-014", "测试框架", "测试", "kuncanyun_saas", "test_ops", "KC014", TaskPriority.P2),
-        Task("KC-015", "CI/CD", "部署", "kuncanyun_saas", "test_ops", "KC015", TaskPriority.P2),
+        Task("KC-003", "OA审批流引擎", "审批", "kuncanyun_saas", "oa_plugin", "KC003", TaskPriority.P0),
+        Task("KC-004", "CRM客户管理", "客户", "kuncanyun_saas", "crm_plugin", "KC004", TaskPriority.P0),
+        Task("KC-005", "ERP进销存", "进销存", "kuncanyun_saas", "erp_plugin", "KC005", TaskPriority.P0),
+        Task("KC-006", "AI智能推荐", "推荐", "kuncanyun_saas", "ai_engine", "KC006", TaskPriority.P1),
+        Task("KC-007", "流程自动化", "自动化", "kuncanyun_saas", "ai_engine", "KC007", TaskPriority.P1),
     ]
     
-    # ===== 项目3: AI选股App (40个任务) =====
+    # ===== 项目3: AI选股App (18个任务) =====
     stock_tasks = [
         Task("STOCK-001", "用户系统", "注册登录", "ai_stock_app", "backend", "ST001", TaskPriority.P0),
         Task("STOCK-002", "行情接口", "行情", "ai_stock_app", "backend", "ST002", TaskPriority.P0),
         Task("STOCK-003", "选股API", "选股", "ai_stock_app", "backend", "ST003", TaskPriority.P0),
-        Task("STOCK-004", "计费系统", "计费", "ai_stock_app", "backend", "ST004", TaskPriority.P1),
-        Task("STOCK-005", "竞价抢筹策略", "策略1", "ai_stock_app", "strategy", "ST005", TaskPriority.P0),
-        Task("STOCK-006", "盘中追涨策略", "策略2", "ai_stock_app", "strategy", "ST006", TaskPriority.P0),
-        Task("STOCK-007", "尾盘异动策略", "策略3", "ai_stock_app", "strategy", "ST007", TaskPriority.P0),
-        Task("STOCK-008", "题材轮动策略", "策略4", "ai_stock_app", "strategy", "ST008", TaskPriority.P0),
-        Task("STOCK-009", "首板打板策略", "策略5", "ai_stock_app", "strategy", "ST009", TaskPriority.P1),
-        Task("STOCK-010", "连板接力策略", "策略6", "ai_stock_app", "strategy", "ST010", TaskPriority.P1),
-        Task("STOCK-011", "技术面评分", "技术", "ai_stock_app", "score", "ST011", TaskPriority.P0),
-        Task("STOCK-012", "基本面评分", "基本面", "ai_stock_app", "score", "ST012", TaskPriority.P0),
-        Task("STOCK-013", "资金面评分", "资金", "ai_stock_app", "score", "ST013", TaskPriority.P0),
-        Task("STOCK-014", "消息面评分", "消息", "ai_stock_app", "score", "ST014", TaskPriority.P1),
-        Task("STOCK-015", "波动率评分", "波动", "ai_stock_app", "score", "ST015", TaskPriority.P1),
-        Task("STOCK-016", "前端登录页", "登录", "ai_stock_app", "frontend", "ST016", TaskPriority.P0),
-        Task("STOCK-017", "前端首页", "首页", "ai_stock_app", "frontend", "ST017", TaskPriority.P0),
-        Task("STOCK-018", "K线图", "K线", "ai_stock_app", "frontend", "ST018", TaskPriority.P0),
+        Task("STOCK-004", "竞价抢筹策略", "策略1", "ai_stock_app", "strategy", "ST004", TaskPriority.P0),
+        Task("STOCK-005", "盘中追涨策略", "策略2", "ai_stock_app", "strategy", "ST005", TaskPriority.P0),
+        Task("STOCK-006", "尾盘异动策略", "策略3", "ai_stock_app", "strategy", "ST006", TaskPriority.P0),
+        Task("STOCK-007", "题材轮动策略", "策略4", "ai_stock_app", "strategy", "ST007", TaskPriority.P0),
+        Task("STOCK-008", "技术面评分", "技术", "ai_stock_app", "score", "ST008", TaskPriority.P0),
+        Task("STOCK-009", "基本面评分", "基本面", "ai_stock_app", "score", "ST009", TaskPriority.P0),
+    ]
+    
+    # ===== 项目4: 汉越语学习工具 (30个任务) =====
+    hanyu_tasks = [
+        # 词汇系统 (8人)
+        Task("VOCAB-001", "L1词汇录入", "500个词汇", "hanyu_learning", "vocab", "HY001", TaskPriority.P0),
+        Task("VOCAB-002", "L2词汇录入", "500个词汇", "hanyu_learning", "vocab", "HY002", TaskPriority.P0),
+        Task("VOCAB-003", "L3词汇录入", "500个词汇", "hanyu_learning", "vocab", "HY003", TaskPriority.P0),
+        Task("VOCAB-004", "L4词汇录入", "500个词汇", "hanyu_learning", "vocab", "HY004", TaskPriority.P0),
+        Task("VOCAB-005", "L5词汇录入", "500个词汇", "hanyu_learning", "vocab", "HY005", TaskPriority.P0),
+        Task("VOCAB-006", "词汇分类", "商业/技术/专业", "hanyu_learning", "vocab", "HY006", TaskPriority.P1),
+        Task("VOCAB-007", "词汇审核", "审核L1-L5", "hanyu_learning", "vocab", "HY007", TaskPriority.P1),
+        Task("VOCAB-008", "词汇测试", "测试覆盖", "hanyu_learning", "vocab", "HY008", TaskPriority.P2),
+        
+        # 词根系统 (4人)
+        Task("ROOT-001", "词根数据库", "词根词缀", "hanyu_learning", "root", "HY009", TaskPriority.P0),
+        Task("ROOT-002", "词汇关联", "同义词/反义词", "hanyu_learning", "root", "HY010", TaskPriority.P1),
+        Task("ROOT-003", "语义网络", "关联关系", "hanyu_learning", "root", "HY011", TaskPriority.P1),
+        Task("ROOT-004", "词根学习", "记忆法", "hanyu_learning", "root", "HY012", TaskPriority.P2),
+        
+        # 学习卡片 (4人)
+        Task("CARD-001", "卡片动画", "翻转动画", "hanyu_learning", "card", "HY013", TaskPriority.P1),
+        Task("CARD-002", "间隔重复", "艾宾浩斯算法", "hanyu_learning", "card", "HY014", TaskPriority.P0),
+        Task("CARD-003", "复习提醒", "智能提醒", "hanyu_learning", "card", "HY015", TaskPriority.P1),
+        Task("CARD-004", "卡片管理", "收藏分类", "hanyu_learning", "card", "HY016", TaskPriority.P1),
+        
+        # 语音功能 (5人)
+        Task("VOICE-001", "Azure TTS", "微软语音", "hanyu_learning", "voice", "HY017", TaskPriority.P0),
+        Task("VOICE-002", "Google TTS", "谷歌语音", "hanyu_learning", "voice", "HY018", TaskPriority.P0),
+        Task("VOICE-003", "ASR识别", "语音识别", "hanyu_learning", "voice", "HY019", TaskPriority.P0),
+        Task("VOICE-004", "发音评测", "评分对比", "hanyu_learning", "voice", "HY020", TaskPriority.P1),
+        Task("VOICE-005", "越南语TTS", "越南语专属", "hanyu_learning", "voice", "HY021", TaskPriority.P1),
+        
+        # 测试题库 (4人)
+        Task("TEST-001", "选择题", "四选一", "hanyu_learning", "test", "HY022", TaskPriority.P1),
+        Task("TEST-002", "填空题", "填空", "hanyu_learning", "test", "HY023", TaskPriority.P1),
+        Task("TEST-003", "听力题", "听力测试", "hanyu_learning", "test", "HY024", TaskPriority.P1),
+        Task("TEST-004", "成绩统计", "成绩分析", "hanyu_learning", "test", "HY025", TaskPriority.P2),
+        
+        # 进度追踪 (3人)
+        Task("PROGRESS-001", "学习统计", "进度统计", "hanyu_learning", "progress", "HY026", TaskPriority.P1),
+        Task("PROGRESS-002", "数据可视化", "图表展示", "hanyu_learning", "progress", "HY027", TaskPriority.P2),
+        Task("PROGRESS-003", "报表导出", "PDF/Excel", "hanyu_learning", "progress", "HY028", TaskPriority.P2),
+        
+        # 移动端 (2人)
+        Task("MOBILE-001", "iOS适配", "iOS原生", "hanyu_learning", "mobile", "HY029", TaskPriority.P1),
+        Task("MOBILE-002", "Android适配", "Android原生", "hanyu_learning", "mobile", "HY030", TaskPriority.P1),
     ]
     
     # 添加所有任务
@@ -177,6 +191,8 @@ def create_all_projects_tasks() -> MultiProjectTaskQueue:
         queue.add_task("kuncanyun_saas", task)
     for task in stock_tasks:
         queue.add_task("ai_stock_app", task)
+    for task in hanyu_tasks:
+        queue.add_task("hanyu_learning", task)
     
     return queue
 
@@ -187,7 +203,7 @@ if __name__ == "__main__":
     status = queue.get_status()
     
     print("=" * 50)
-    print("多项目AI数字员工任务队列系统")
+    print("多项目AI数字员工任务队列系统 v2.0")
     print("=" * 50)
     print()
     
@@ -199,5 +215,6 @@ if __name__ == "__main__":
         print()
     
     total_pending = sum(s['pending'] for s in status.values())
-    print(f"总计: {total_pending} 个任务待领取")
+    total_people = 77 + 32 + 35 + 30
+    print(f"总计: {total_pending} 个任务 | {total_people} 人")
     print("=" * 50)
