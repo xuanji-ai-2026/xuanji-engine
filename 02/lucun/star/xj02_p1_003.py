@@ -18,7 +18,7 @@ class 多模型路由:
     - 吞吐量: 10000 QPS
     """
     
-    def __init__(self) -> None:
+    def __init__(self):
         self.queue = []
         self.workers = []
     
