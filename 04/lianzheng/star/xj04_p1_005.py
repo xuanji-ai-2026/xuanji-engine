@@ -3,7 +3,7 @@
 版本: v2.0
 负责人: 167
 任务ID: XJ04-P1-005
-创建时间: 2026-03-22 11:29
+创建时间: 2026-03-22 12:17
 
 功能: 心理
 """
@@ -16,10 +16,10 @@ class 心理学模型:
     心理
     """
     
-    def __init__(self) -> None -> None:
+    def __init__(self):
         pass
     
-    def async run(self) -> Dict:
+    async def run(self) -> Dict:
         """运行"""
         return {}
 
