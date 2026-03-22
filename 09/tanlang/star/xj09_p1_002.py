@@ -3,7 +3,7 @@ TTS语音合成
 版本: v2.0
 负责人: 144
 任务ID: XJ09-P1-002
-创建时间: 2026-03-22 11:30
+创建时间: 2026-03-22 12:18
 
 功能: TTS
 """
@@ -16,10 +16,10 @@ class TTS语音合成:
     TTS
     """
     
-    def __init__(self) -> None -> None:
+    def __init__(self):
         pass
     
-    def async run(self) -> Dict:
+    async def run(self) -> Dict:
         """运行"""
         return {}
 
