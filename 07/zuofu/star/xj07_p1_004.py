@@ -3,7 +3,7 @@
 版本: v2.0
 负责人: 149
 任务ID: XJ07-P1-004
-创建时间: 2026-03-22 11:30
+创建时间: 2026-03-22 12:17
 
 功能: 配置
 """
@@ -16,10 +16,10 @@ class 配置中心:
     配置
     """
     
-    def __init__(self) -> None -> None:
+    def __init__(self):
         pass
     
-    def async run(self) -> Dict:
+    async def run(self) -> Dict:
         """运行"""
         return {}
 
