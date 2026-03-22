@@ -3,7 +3,7 @@
 版本: v2.0
 负责人: 137
 任务ID: XJ06-P1-005
-创建时间: 2026-03-22 11:30
+创建时间: 2026-03-22 12:17
 
 功能: 消息
 """
@@ -16,10 +16,10 @@ class 邮件短信插件:
     消息
     """
     
-    def __init__(self) -> None -> None:
+    def __init__(self):
         pass
     
-    def async run(self) -> Dict:
+    async def run(self) -> Dict:
         """运行"""
         return {}
 
