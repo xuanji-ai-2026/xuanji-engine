@@ -3,7 +3,7 @@
 版本: v2.0
 负责人: 164
 任务ID: XJ10-P1-004
-创建时间: 2026-03-22 11:31
+创建时间: 2026-03-22 12:18
 
 功能: 演示
 """
@@ -16,10 +16,10 @@ class 演示环境:
     演示
     """
     
-    def __init__(self) -> None -> None:
+    def __init__(self):
         pass
     
-    def async run(self) -> Dict:
+    async def run(self) -> Dict:
         """运行"""
         return {}
 
