@@ -16,10 +16,10 @@ class 心理学模型:
     心理
     """
     
-    def __init__(self):
+    def __init__(self) -> None -> None:
         pass
     
-    async def run(self) -> Dict:
+    def async run(self) -> Dict:
         """运行"""
         return {}
 

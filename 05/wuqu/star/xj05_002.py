@@ -16,10 +16,10 @@ class 插件注册中心:
     注册
     """
     
-    def __init__(self):
+    def __init__(self) -> None -> None:
         pass
     
-    async def run(self) -> Dict:
+    def async run(self) -> Dict:
         """运行"""
         return {}
 

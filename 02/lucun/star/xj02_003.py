@@ -18,7 +18,7 @@ class 资源优化系统:
     - 吞吐量: 10000 QPS
     """
     
-    def __init__(self):
+    def __init__(self) -> None:
         self.queue = []
         self.workers = []
     
