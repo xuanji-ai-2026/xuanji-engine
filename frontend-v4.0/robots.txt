@@ -1,0 +1,14 @@
+# 玄玑引擎 robots.txt
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /api/internal/
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: http://xuanji-ai.com/sitemap.xml
+
+# 爬取延迟
+Crawl-delay: 1

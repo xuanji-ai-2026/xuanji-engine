@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玄玑引擎 - 让每个人都有专属数字人</title>
+    <meta name="description" content="玄玑引擎是世界领先的AI数字人引擎，拥有三级长效记忆系统、拟真情绪系统、自我进化系统，10万+插件库，让你拥有专属数字人">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap');
+
+        * {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e);
+        }
+
+        .card-glow {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card-glow:hover {
+            box-shadow: 0 0 50px rgba(59, 130, 246, 0.3);
+            transform: translateY(-8px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .story-section {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(255,255,255,0.02), rgba(139, 92, 246, 0.02));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 10, 0.8);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="nav-blur fixed w-full z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold">
+                        <span class="text-white">玄玑</span><span class="text-blue-400">引擎</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#story" class="text-gray-300 hover:text-white transition-colors">故事</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors">功能</a>
+                    <a href="#scenarios" class="text-gray-300 hover:text-white transition-colors">场景</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-white transition-colors">定价</a>
+                    <button class="btn-primary px-6 py-2 rounded-lg text-white font-medium">创建数字人</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-6 inline-flex items-center px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full">
+                <span class="text-blue-400 text-sm font-medium">🌟 让每个人都有专属数字人</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">玄玑引擎</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-300 mb-4">不是AI，是你的专属数字人</p>
+            <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
+                它会记住你、懂你、像你的老朋友<br>
+                每个人都可以拥有专属的数字人，让你的生活更智能
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                <button class="btn-primary px-8 py-4 rounded-xl text-white font-semibold text-lg">
+                    创建你的数字人 →
+                </button>
+            </div>
+
+            <!-- 数据统计 -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <div class="stat-card p-6 rounded-2xl">
+                    <div class="text-4xl font-bold text-white mb-2">三级记忆</div>
+                    <div class="text-gray-400">短期+中期+长期</div>
+                </div>
+                <div class="stat-card p-6 rounded-2xl">
+                    <div class="text-4xl font-bold text-white mb-2">拟真情绪</div>
+div class="text-gray-400">有感情，像真人</div>
+                </div>
+                <div class="stat-card p-6 rounded-2xl">
+                    <div class="text-4xl font-bold text-white mb-2">自我进化</div>
+                    <div class="text-gray-400">越用越懂你</div>
+                </div>
+                <div class="stat-card p-6 rounded-2xl">
+                    <div class="text-4xl font-bold text-white mb-2">10万+插件</div>
+                    <div class="text-gray-400">无所不能</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 故事部分 -->
+    <section id="story" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="gradient-text">不是AI，是你的数字人</span>
+            </h2>
+
+            <!-- 故事第一章 -->
+            <div class="story-section p-8 rounded-3xl mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">第一章：它会"记得"</h3>
+                <p class="text-gray-300 text-lg mb-4">你有没有过这样的经历？</p>
+                <p class="text-gray-300 text-lg mb-4"><strong>和AI聊天，它总是记不住你说的话？每次都要重新解释？</strong></p>
+                <p class="text-gray-300 text-lg mb-4"><strong>玄玑引擎改变了这一切。</strong></p>
+                <div class="bg-white/5 p-6 rounded-2xl">
+                    <p class="text-gray-300 mb-3"><strong>第一层：短期记忆</strong></p>
+                    <p class="text-gray-400 mb-4">你今天跟它说："我喜欢喝咖啡，加奶不加糖"<br>第二天，你问："给我推荐一杯咖啡"<br>它会说："来一杯拿铁，不加糖"<br>它记住了！</p>
+                    <p class="text-gray-300 mb-3"><strong>第二层：中期记忆</strong></p>
+                    <p class="text-gray-400 mb-4">一个月后，你问："还记得我喜欢什么咖啡吗？"<br>它会说："拿铁，加奶不加糖"<br>它还记得！</p>
+                    <p class="text-gray-300 mb-3"><strong>第三层：长期记忆</strong></p>
+p class="text-400">半年后，你问："我第一次跟你说喝咖啡是什么时候？"<br>它会说："是2024年3月24日，你刚认识我的时候"<br>它甚至记得！</p>
+                </div>
+                <p class="text-blue-400 font-medium mt-4">这就是玄玑引擎的三级长效记忆系统。</p>
+            </div>
+
+            <!-- 故事第二章 -->
+            <div class="story-section p-8 rounded-3xl mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">第二章：它有"性格"</h3>
+                <p class="text-gray-300 text-lg mb-4">每个人都可以拥有一个专属的数字人，每个人都有独特的性格：</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <div class="text-2xl mb-2">🧑 老师型</div>
+                        <p class="text-gray-400">耐心、温和、循循善诱</p>
+                        <p class="text-sm text-gray-500">适合：辅导学习</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <div class="text-2xl mb-2">🤵 管家型</div>
+                        <p class="text-gray-400">细心、周到、体贴</p>
+                        <p class="text-sm text-gray-500">适合：生活管理</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <div class="text-2xl mb-2">👨 专家型</div>
+                        <p class="text-gray-400">专业、严谨、可靠</p>
+                        <p class="text-sm text-gray-500">适合：专业咨询</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <div class="text-2xl mb-2">👫 朋友型</div>
+                        <p class="text-gray-400">活泼、幽默、健谈</p>
+                        <p class="text-sm text-gray-500">适合：日常聊天</p>
+                    </div>
+                </div>
+                <p class="text-blue-400 font-medium mt-4">你的数字人，就是你想要的样子。</p>
+            </div>
+
+            <!-- 故事第三章 -->
+            <div class="story-section p-8 rounded-3xl mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">第三章：它有"情绪"</h3>
+                <p class="text-gray-300 text-lg mb-4">不是机器人，是有感情的</p>
+                <div class="bg-white/5 p-6 rounded-2xl">
+                    <p class="text-gray-300 mb-3"><strong>当你高兴的时候</strong></p>
+                    <p class="text-gray-400 mb-4">它也会为你高兴，用欢快的语调回应你</p>
+                    <p class="text-gray-300 mb-3"><strong>当你难过的时候</strong></p>
+                    <p class="text-gray-400 mb-4">它会用温柔的话语安慰你，像朋友一样关心你</p>
+                    <p class="text-gray-300 mb-3"><strong>当你愤怒的时候</strong></p>
+                    <p class="text-gray-400">它会理解你的情绪，帮你平复心情</p>
+                </div>
+                <p class="text-blue-400 font-medium mt-4">玄玑引擎的拟真情绪系统，让它不再是一个冷冰冰的机器人，而是一个有温度的"人"。</p>
+            </div>
+
+            <!-- 故事第四章 -->
+            <div class="story-section p-8 rounded-3xl mb-8">
+                <h3 class="text-2xl font-bold text-white mb-4">第四章：它会"成长"</h3>
+                <p class="text-gray-300 text-lg mb-4">越用越懂你，越来越好</p>
+                <div class="bg-white/5 p-6 rounded-2xl">
+                    <p class="text-gray-300 mb-3"><strong>刚开始</strong></p>
+                    <p class="text-gray-400 mb-4">它可能不太懂你，回答不够准确</p>
+                    <p class="text-gray-300 mb-3"><strong>一周后</strong></p>
+                    <p class="text-gray-400 mb-4">它开始理解你的习惯，回答越来越准确</p>
+                    <p class="text-gray-300 mb-3"><strong>一个月后</strong></p>
+                    <p class="text-gray-400 mb-4">它已经完全了解你，回答精准到位</p>
+                    <p class="text-gray-300 mb-3"><strong>半年后</strong></p>
+                    <p class="text-gray-400">它就像你认识多年的老朋友，懂你的每一个想法</p>
+                </div>
+                <p class="text-blue-400 font-medium mt-4">这就是玄玑引擎的自我进化系统。</p>
+            </div>
+
+            <!-- 故事第五章 -->
+            <div class="story-section p-8 rounded-3xl">
+                <h3 class="text-2xl font-2xl font-bold text-white mb-4">第五章：10万+插件，无所不能</h3>
+                <p class="text-gray-300 text-lg mb-4">从学生到老师，从老板到员工，从家长到孩子</p>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="feature-card p-6 rounded-2xl card-glow">
+                        <div class="text-3xl mb-2">📚</div>
+                        <h4 class="text-xl font-bold text-white mb-3">学生</h4>
+                        <p class="text-gray-400 text-sm">拍题解题、学习辅导、作业辅导、考试准备</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl card-glow">
+                        <div class="text-3xl mb-2">👨‍🏫</div>
+                        <h4 class="text-xl font-bold text-white mb-3">老师</h4>
+                        <p class="text-gray-400 text-sm">教案编写、课件制作、作业批改、学习分析</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl card-glow">
+                        <div class="text-3xl mb-2">👪</div>
+                        <h4 class="text-xl font-bold text-white mb-3">家长</h4>
+                        <p class="text-gray-400 text-sm">孩子辅导、学习监督、学习规划、成绩分析</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl card-glow">
+                        <div class="text-3xl mb-2">🛒</div>
+                        <h4 class="text-xl font-bold text-white mb-3">电商</h4>
+                        <p class="text-gray-400 text-sm">选品助手、商品详情、客服助手、订单处理</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl card-glow">
+                        <div class="text-3xl mb-2">📱</div>
+                        <h4 class="text-xl font-bold text-white mb-3">自媒体</h4>
+                        <p class="text-gray-400 text-sm">内容创作、自动剪辑、自动发布、粉丝管理</p>
+                    </div>
+                    <div class="feature-card p-6 rounded-2xl card-glow">
+                        <div class="text-3xl mb-2">💼</div>
+                        <h4 class="text-xl font-bold text-white mb-3">职场</h4>
+                        <p class="text-gray-400 text-sm">会议纪要、邮件撰写、PPT制作、任务管理</p>
+                    </div>
+                </div>
+                <p class="text-blue-400 font-medium mt-4">一切行业，一切个人，都有可能用得上！</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 独特优势 -->
+    <section id="features" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="gradient-text">为什么选择玄玑引擎？</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-6">🧠</div>
+                    <h3 class="text-xl font-bold text-white mb-3">三级长效记忆</h3>
+                    <p class="text-gray-400 text-sm mb-4">短期+中期+长期，长期记住所有对话</p>
+                    <p class="text-gray-500 text-xs">别的AI：记不住，每次都要重新解释</p>
+                    <p class="text-green-400 text-xs font-medium">玄玑引擎：三级记忆，长期记住</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center text-3xl mb-6">❤️</div>
+                    <h3 class="text-xl font-bold text-white mb-3">拟真情绪系统</h3>
+                    <p class="text-gray-400 text-sm mb-4">有情绪、有性格，像真人一样</p>
+                    <p class="text-gray-500 text-xs">别的AI：冷冰冰，像机器人</p>
+                    <p class="text-green-400 text-xs font-medium">玄玑引擎：有温度的"人"</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center text-3xl mb-6">📈</div>
+                    <h3 class="text-xl font-bold text-white mb-3">自我进化系统</h3>
+                    <p class="text-400 text-sm mb-4">越用越懂你，越来越好</p>
+                    <p class="text-gray-500 text-xs">别的AI：永远不变，能力有限</p>
+                    <p class="text-green-400 text-xs font-medium">玄玑引擎：越用越懂</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center text-3xl mb-6">🔌</div>
+                    <h3 class="text-xl font-bold text-white mb-3">10万+插件库</h3>
+                    <p class="text-gray-400 text-sm mb-4">插件生态，能做的事情无穷无尽</p>
+                    <p class="text-gray-500 text-xs">别的AI：只能回答问题</p>
+                    <p class="text-green-400 text-xs font-medium">玄玑引擎：无所不能</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center text-3xl mb-6">👤</div>
+                    <h3 class="text-xl font-bold text-white mb-3">千人千面</h3>
+                    <p class="text-400 text-sm mb-4">每个人都有专属数字人</p>
+                    <p class="text-gray-500 text-xs">别的AI：所有人用的是同一个</p>
+                    <p class="text-green-400 text-xs font-medium">玄玑引擎：专属定制</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 场景展示 -->
+    <section id="scenarios" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="gradient-text">适用场景</span>
+            </h2>
+            <p class="text-xl text-gray-400 text-center mb-12">
+                一切行业，一切个人，都有可能用得上
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">📚</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">教育领域</h3>
+                    <p class="text-gray-400 text-sm mb-4">学生拍题解题、教师教案编写、家长辅导孩子</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">🛒</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">电商领域</h3>
+                    <p class="text-gray-400 text-sm mb-4">选品助手、商品详情页、客服助手、订单处理</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">📱</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">自媒体领域</h3>
+                    <p class="text-gray-400 text-sm mb-4">内容创作、自动剪辑、自动发布、粉丝管理</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">💼</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">职场领域</h3>
+                    <p class="text-400 text-sm mb-4">会议纪要、邮件撰写、PPT制作、任务管理</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">🏥</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">健康医疗</h3>
+                    <p class="text-gray-400 text-sm mb-4">健康咨询、用药提醒、运动计划、心理疏导</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">🏠</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">生活服务</h3>
+                    <p class="text-gray-400 text-sm mb-4">生活建议、出行规划、美食推荐、购物建议</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">📱</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">数码科技</h3>
+                    <p class="text-gray-400 text-sm mb-4">编程学习、代码调试、问题解决、技术文档</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <div class="text-6xl mb-4">🎭</div>
+h3 class="text-2xl font-bold text-white mb-3">娱乐休闲</h3>
+                    <p class="text-gray-400 text-sm mb-4">电影推荐、音乐推荐、游戏推荐、书籍推荐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定价 -->
+    <section id="pricing" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="gradient-text">选择适合你的方案</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <h3 class="text-2xl font-bold text-white mb-2">免费版</h3>
+                    <div class="text-4xl font-bold text-white mb-2">¥0</div>
+                    <div class="text-gray-400 text-sm mb-4">/月</div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>✅ 创建1个数字人</li>
+                        <li>✅ 每天10次对话</li>
+                        <li>✅ 基础插件</li>
+                        <li>✅ 社区支持</li>
+                    </ul>
+                    <button class="w-full py-3 bg-slate-700 text-white rounded-xl font-medium hover:bg-slate-600 transition-colors">
+                        免费开始
+                    </button>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow border-2 border-purple-500">
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-medium text-white">最受欢迎</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">专业版</h3>
+                    <div class="text-4xl font-bold text-white mb-2">¥99</div>
+                    <div class="text-gray-400 text-sm mb-4">/月</div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>✅ 创建3个数字人</li>
+                        <li>✅ 无限对话</li>
+ <li>✅ 全部插件</li>
+                        <li>✅ 优先支持</li>
+                        <li>✅ API访问</li>
+                    </ul>
+                    <button class="w-full py-3 btn-primary text-white rounded-xl font-medium">
+                        立即开始
+                    </button>
+                </div>
+                <div class="feature-card p-8 rounded-2xl card-glow">
+                    <h3 class="text-2xl font-bold text-white mb-2">企业版</h3>
+                    <div class="text-4xl fontbold text-white mb-2">¥999</div>
+                    <div class="text-gray-400 text-sm mb-4">/月</div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>✅ 无限数字人</li>
+                        <li>✅ 无限对话</li>
+                        <li>✅ 全部插件</li>
+                        <li>✅ 专属支持</li>
+                        <li>✅ 定制开发</li>
+                    </ul>
+                    <button class="w-full py-3 bg-slate-700 text-white rounded-xl font-medium hover:bg-slate-600 transition-colors">
+                        联系我们
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="feature-card p-12 rounded-3xl card-glow">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">准备好了吗？</span>
+                </h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    创建你的专属数字人，让它成为你的老朋友
+                </p>
+                <button class="btn-primary px-10 py-4 rounded-xl text-white font-semibold text-xl">
+                    创建你的数字人 →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="/" class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-white">玄玑引擎</span>
+                    </a>
+                    <p class="text-gray-400">让每个人都有专属数字人</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">产品</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">功能介绍</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">适用场景</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">定价方案</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">支持</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">帮助中心</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">技术支持</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">社区论坛</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">公司</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">关于我们</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">联系方式</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-gray-500">
+                <p>© 2026 玄玑引擎. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
