@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玄玑引擎 - 不只是AI，是你的数字员工</title>
+    <meta name="description" content="玄玑引擎 - 不只是AI，是你的数字员工，你的专属分身。能听懂、能理解、能给出答案，还真能干活，能帮你省钱更能挣钱！">
+    <meta name="keywords" content="玄玑引擎,AI数字人,数字员工,真实交互,智能客服,智能营销">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: radial-gradient(ellipse at top, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
+            text-align: center;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1.5rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 9999px;
+            margin-bottom: 2rem;
+            color: #3b82f6;
+            font-weight: 500;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 500;
+            color: #9ca3af;
+            margin-bottom: 3rem;
+        }
+        
+        .tagline {
+            font-size: 1.125rem;
+            color: #6b7280;
+            max-width: 2xl;
+            margin-bottom: 4rem;
+        }
+        
+        .value-proposition {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 4rem;
+            max-width: 4xl;
+        }
+        
+        .value-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+        
+        .value-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            border-radius: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 6rem;
+            width: 100%;
+            max-width: 5xl;
+        }
+        
+        .stat-card {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
+        
+        .features-section {
+            padding: 6rem 2rem;
+            max-width: 7xl;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-size: 1.25rem;
+            margin-bottom: 4rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        
+        .feature-description {
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
+        
+        .comparison-section {
+            padding: 6rem 2rem;
+            max-width: 7xl;
+            margin: 0 auto;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 2rem;
+        }
+        
+        .comparison-table th {
+            padding: 1.5rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            color: #d1d5db;
+        }
+        
+        .comparison-table .highlight {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        footer p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 1rem;
+            }
+            
+            .value-proposition {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="badge">🌟 让每个人都有专属数字人</div>
+        
+        <h1><span class="gradient-text">玄玑引擎</span></h1>
+        <h2>不只是AI，是你的数字员工，你的专属分身！</h2>
+        
+        <p class="tagline">
+            能听懂、能理解、能给出答案，还真能干活，能帮你省钱更能挣钱！
+        </p>
+        
+        <div class="value-proposition">
+            <div class="value-item">📞 打电话、发邮件、发短信</div>
+            <div class="value-item">🌐 控制智能家居、办公设备、工业设备</div>
+            <div class="value-item">🌐 管理网站、运营自媒体账号</div>
+            <div class="value-item">💼 处理订单、管理客户、生成报表</div>
+            <div class="value-item">🤝 有情绪、有性格、会成长</div>
+        </div>
+        
+        <a href="#features" class="cta-button">立即体验 →</a>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">三级记忆</div>
+                <div class="stat-label">短期+中期+长期</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">拟真情绪</div>
+                <div class="stat-label">有感情，像真人</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">自我进化</div>
+                <div class="stat-label">越用越懂你</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10万+插件</div>
+                <div class="stat-label">无所不能</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-section" id="features">
+        <h2 class="section-title">真实世界交互能力</h2>
+        <p class="section-subtitle">不只是会说话，更能真真正干</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📞</div>
+                <h3 class="feature-title">通信交互</h3>
+                <p class="feature-description">智能打电话、发邮件、发短信，自动处理客户沟通</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏠</div>
+                <h3 class="feature-title">设备控制</h3>
+                <p class="feature-description">控制智能家居、办公设备、工业设备</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3 class="feature-title">网站管理</h3>
+                <p class="feature-description">自动更新网站内容、管理数据</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">自媒体运营</h3>
+                <p class="feature-description">自动运营500+社交媒体平台</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3 class="feature-title">业务流程</h3>
+                <p class="feature-description">处理订单、管理客户、生成报表</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔌</div>
+                <h3 class="feature-title">10万+插件</h3>
+                <p class="feature-description">无限扩展能力，支持所有行业</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="comparison-section">
+        <h2 class="section-title">为什么选择玄玑引擎</h2>
+        <p class="section-subtitle">不只是AI，是真真正能干活的数字人</p>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>对比项</th>
+                    <th>其他AI</th>
+                    <th class="highlight">玄玑引擎</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>功能</td>
+                    <td>对话</td>
+                    <td class="highlight">对话+做</td>
+                </tr>
+                <tr>
+                    <td>交互</td>
+                    <td>键盘输入</td>
+                    <td class="highlight">语音+文字+设备+系统</td>
+                </tr>
+                <tr>
+                    <td>记忆</td>
+                    <td>记不住</td>
+                    <td class="highlight">三级记忆</td>
+                </tr>
+                <tr>
+                    <td>设备控制</td>
+                    <td>不支持</td>
+                    <td class="highlight">支持2000+设备</td>
+                </tr>
+                <tr>
+                    <td>网站管理</td>
+                    <td>不支持</td>
+                    <td class="highlight">支持100+CMS</td>
+                </tr>
+                <tr>
+                    <td>自媒体运营</td>
+                    <td>不支持</td>
+                    <td class="highlight">支持500+平台</td>
+                </tr>
+                <tr>
+                    <td>工业集成</td>
+                    <td>不支持</td>
+                    <td class="highlight">支持1000+工业系统</td>
+                </tr>
+                <tr>
+                    <td>真实交互</td>
+                    <td>不支持</td>
+                    <td class="highlight">全面的真实交互能力</td>
+                </tr>
+                <tr>
+                    <td>插件生态</td>
+                    <td>少量有限</td>
+                    <td class="highlight">10万+插件</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <footer>
+        <p>© 2026 玄玑引擎. All rights reserved.</p>
+    </footer>
+</body>
+</html>
