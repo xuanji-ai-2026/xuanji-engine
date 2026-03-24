@@ -1,0 +1,392 @@
+[
+  {
+    "task_id": "P5-01-001",
+    "name": "GPT-5等下一代模型接入",
+    "responsible": "陈元灵(102)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "01_紫微帝星",
+    "source": "auto-generated",
+    "module": "01_ziwei_star",
+    "task_type": "未来规划"
+  },
+  {
+    "task_id": "P5-01-002",
+    "name": "量子计算知识库探索",
+    "responsible": "张伟(011)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "01_紫微帝星",
+    "source": "auto-generated",
+    "module": "01_ziwei_star",
+    "task_type": "前沿技术"
+  },
+  {
+    "task_id": "P5-02-003",
+    "name": "AI模型联邦学习框架",
+    "responsible": "周禄存(111)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "02_禄存星",
+    "source": "auto-generated",
+    "module": "02_lucun_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-02-004",
+    "name": "模型即服务平台（MaaS）",
+    "responsible": "郑路由(112)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "02_禄存星",
+    "source": "auto-generated",
+    "module": "02_lucun_star",
+    "task_type": "长期研究"
+  },
+  {
+    "task_id": "P5-03-005",
+    "name": "脑机接口记忆同步",
+    "responsible": "蒋巨门(119)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "03_巨门星",
+    "source": "auto-generated",
+    "module": "03_jumen_star",
+    "task_type": "前沿技术"
+  },
+  {
+    "task_id": "P5-03-006",
+    "name": "记忆云备份与恢复",
+    "responsible": "沈记忆(120)",
+    "workload": "3-4周",
+    "priority": "P5",
+    "star": "03_巨门星",
+    "source": "auto-generated",
+    "module": "03_jumen_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-04-007",
+    "name": "人格AI自我进化系统",
+    "responsible": "伍廉贞(163)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "04_廉贞星",
+    "source": "auto-generated",
+    "module": "04_lianzheng_star",
+    "task_type": "长期研究"
+  },
+  {
+    "task_id": "P5-04-008",
+    "name": "多人格融合算法",
+    "responsible": "余情绪(164)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "04_廉贞星",
+    "source": "auto-generated",
+    "module": "04_lianzheng_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-05-009",
+    "name": "插件AI自主生成系统",
+    "responsible": "谢武功(127)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "05_武曲星",
+    "source": "auto-generated",
+    "module": "05_wuqu_star",
+    "task_type": "前沿技术"
+  },
+  {
+    "task_id": "P5-05-010",
+    "name": "插件区块链确权",
+    "responsible": "邹接口(128)",
+    "workload": "3-4周",
+    "priority": "P5",
+    "star": "05_武曲星",
+    "source": "auto-generated",
+    "module": "05_wuqu_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-06-011",
+    "name": "跨系统任务编排引擎",
+    "responsible": "章破军(133)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "06_破军星",
+    "source": "auto-generated",
+    "module": "06_pojun_star",
+    "task_type": "长期研究"
+  },
+  {
+    "task_id": "P5-06-012",
+    "name": "自主决策AI代理",
+    "responsible": "云沙箱(134)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "06_破军星",
+    "source": "auto-generated",
+    "module": "06_pojun_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-07-013",
+    "name": "边缘计算部署框架",
+    "responsible": "倪左辅(146)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "07_左辅星",
+    "source": "auto-generated",
+    "module": "07_zuofu_star",
+    "task_type": "前沿技术"
+  },
+  {
+    "task_id": "P5-07-014",
+    "name": "无服务器架构迁移",
+    "responsible": "汤K8s(147)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "07_左辅星",
+    "source": "auto-generated",
+    "module": "07_zuofu_star",
+    "task_type": "未来规划"
+  },
+  {
+    "task_id": "P5-08-015",
+    "name": "AI安全攻防系统",
+    "responsible": "周右弼(105)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "08_右弼星",
+    "source": "auto-generated",
+    "module": "08_youbi_star",
+    "task_type": "长期研究"
+  },
+  {
+    "task_id": "P5-08-016",
+    "name": "隐私计算平台",
+    "responsible": "乐法律(156)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "08_右弼星",
+    "source": "auto-generated",
+    "module": "08_youbi_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-09-017",
+    "name": "全息投影交互界面",
+    "responsible": "薛贪狼(143)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "09_贪狼星",
+    "source": "auto-generated",
+    "module": "09_tanlang_star",
+    "task_type": "前沿技术"
+  },
+  {
+    "task_id": "P5-09-018",
+    "name": "脑波控制接口",
+    "responsible": "雷ASR(144)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "09_贪狼星",
+    "source": "auto-generated",
+    "module": "09_tanlang_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "P5-10-019",
+    "name": "AI开发者生态系统",
+    "responsible": "邹接口(128)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "10_辅弼星辰",
+    "source": "auto-generated",
+    "module": "10_fubi_star",
+    "task_type": "长期研究"
+  },
+  {
+    "task_id": "P5-10-020",
+    "name": "插件AI市场预测平台",
+    "responsible": "喻发现(129)",
+    "workload": "4-6周",
+    "priority": "P5",
+    "star": "10_辅弼星辰",
+    "source": "auto-generated",
+    "module": "10_fubi_star",
+    "task_type": "实验性功能"
+  },
+  {
+    "task_id": "WEB-001",
+    "name": "官网首页设计开发",
+    "category": "前端",
+    "priority": "P0",
+    "star": "09_贪狼星",
+    "module": "tanlang_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "葛浩(014)",
+      "昌艺(015)"
+    ],
+    "assigned_employee": "葛浩(014)",
+    "assigned_employee_id": "014",
+    "workload": "2周",
+    "description": "官网首页开发 - 产品介绍、核心功能展示、Hero section、特性卡片、CTA按钮"
+  },
+  {
+    "task_id": "WEB-002",
+    "name": "官网产品页面开发",
+    "category": "前端",
+    "priority": "P0",
+    "star": "09_贪狼星",
+    "module": "tanlang_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "葛浩(014)",
+      "昌艺(015)"
+    ],
+    "assigned_employee": "葛浩(014)",
+    "assigned_employee_id": "014",
+    "workload": "2周",
+    "description": "官网产品页面开发 - 功能详情、技术架构、应用场景、成功案例"
+  },
+  {
+    "task_id": "WEB-003",
+    "name": "官网定价页面开发",
+    "category": "前端",
+    "priority": "P0",
+    "star": "09_贪狼星",
+    "module": "tanlang_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "葛浩(014)",
+      "昌艺(015)"
+    ],
+    "assigned_employee": "葛浩(014)",
+    "assigned_employee_id": "014",
+    "workload": "2周",
+    "description": "官网定价页面开发 - 价格方案、套餐对比、付费流程、FAQ"
+  },
+  {
+    "task_id": "WEB-004",
+    "name": "用户社区功能开发",
+    "category": "前端",
+    "priority": "P0",
+    "star": "09_贪狼星",
+    "module": "tanlang_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "陈磊(016)",
+      "周杰(017)"
+    ],
+    "assigned_employee": "陈磊(016)",
+    "assigned_employee_id": "016",
+    "workload": "2周",
+    "description": "用户社区功能 - 用户讨论区、案例分享、问答系统、点赞评论"
+  },
+  {
+    "task_id": "WEB-005",
+    "name": "用户社区社交功能",
+    "category": "前端",
+    "priority": "P0",
+    "star": "09_贪狼星",
+    "module": "tanlang_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "陈磊(016)",
+      "周杰(017)"
+    ],
+    "assigned_employee": "陈磊(016)",
+    "assigned_employee_id": "016",
+    "workload": "2周",
+    "description": "用户社区社交功能 - 关注机制、私信系统、个人主页、动态发布"
+  },
+  {
+    "task_id": "DOC-001",
+    "name": "产品手册编写",
+    "category": "文档",
+    "priority": "P0",
+    "star": "10_辅弼星辰",
+    "module": "fubi_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "马丽(018)",
+      "郑睿(008)"
+    ],
+    "assigned_employee": "马丽(018)",
+    "assigned_employee_id": "018",
+    "workload": "3周",
+    "description": "产品手册编写 - 产品介绍、功能特性、技术架构、应用场景、成功案例"
+  },
+  {
+    "task_id": "DOC-002",
+    "name": "用户手册编写",
+    "category": "文档",
+    "priority": "P0",
+    "star": "10_辅弼星辰",
+    "module": "fubi_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "马丽(018)",
+      "郑睿(008)"
+    ],
+    "assigned_employee": "马丽(018)",
+    "assigned_employee_id": "018",
+    "workload": "2周",
+    "description": "用户手册编写 - 快速开始、使用指南、常见问题、故障排查、最佳实践"
+  },
+  {
+    "task_id": "DOC-003",
+    "name": "开发者手册编写",
+    "category": "文档",
+    "priority": "P0",
+    "star": "10_辅弼星辰",
+    "module": "fubi_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "马丽(018)",
+      "郑睿(008)"
+    ],
+    "assigned_employee": "马丽(018)",
+    "assigned_employee_id": "018",
+    "workload": "3周",
+    "description": "开发者手册编写 - API参考、SDK使用、插件开发、集成指南、调试技巧"
+  },
+  {
+    "task_id": "DOC-004",
+    "name": "文档系统结构搭建",
+    "category": "文档",
+    "priority": "P0",
+    "star": "10_辅弼星辰",
+    "module": "fubi_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "马丽(018)",
+      "郑睿(008)"
+    ],
+    "assigned_employee": "马丽(018)",
+    "assigned_employee_id": "018",
+    "workload": "1周",
+    "description": "文档系统结构搭建 - Docusaurus配置、侧边栏导航、版本控制、搜索功能"
+  },
+  {
+    "task_id": "DOC-005",
+    "name": "API参考文档编写",
+    "category": "文档",
+    "priority": "P0",
+    "star": "10_辅弼星辰",
+    "module": "fubi_star",
+    "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+    "assigned_employees": [
+      "马丽(018)",
+      "郑睿(008)"
+    ],
+    "assigned_employee": "马丽(018)",
+    "assigned_employee_id": "018",
+    "workload": "2周",
+    "description": "API参考文档编写 - 接口定义、请求参数、响应格式、错误代码、示例代码"
+  }
+]

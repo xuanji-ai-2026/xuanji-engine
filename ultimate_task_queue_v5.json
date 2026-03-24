@@ -1,0 +1,2698 @@
+{
+  "version": "v3.0 终极商用版（含P5未来规划）",
+  "created_at": "2026-03-22T19:06:24.153454",
+  "total_tasks": 157,
+  "all_tasks": [
+    {
+      "task_id": "Task-01",
+      "name": "个性化进化决策模块开发",
+      "responsible": "紫微A",
+      "workload": "4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "陈元灵(102)",
+      "assigned_employee_id": "102"
+    },
+    {
+      "task_id": "Task-02",
+      "name": "用户个人知识图谱构建",
+      "responsible": "紫微B",
+      "workload": "3周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "林对齐(106)",
+      "assigned_employee_id": "106"
+    },
+    {
+      "task_id": "Task-03",
+      "name": "知识实时同步机制实现",
+      "responsible": "紫微C",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "黄漂移(107)",
+      "assigned_employee_id": "107"
+    },
+    {
+      "task_id": "Task-04",
+      "name": "元灵系统性能优化",
+      "responsible": "紫微D",
+      "workload": "3周",
+      "priority": "P1",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "周进化(108)",
+      "assigned_employee_id": "108"
+    },
+    {
+      "task_id": "Task-05",
+      "name": "自我进化能力增强",
+      "responsible": "紫微E",
+      "workload": "2周",
+      "priority": "P1",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "吴模板(109)",
+      "assigned_employee_id": "109"
+    },
+    {
+      "task_id": "Task-06",
+      "name": "系统集成测试",
+      "responsible": "紫微F",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "周进化(108)",
+      "assigned_employee_id": "108"
+    },
+    {
+      "task_id": "Task-07",
+      "name": "文档编写与交付",
+      "responsible": "紫微G",
+      "workload": "1周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "吴模板(109)",
+      "assigned_employee_id": "109"
+    },
+    {
+      "task_id": "C-01-001",
+      "name": "全领域知识自动获取",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "陈元灵(102)",
+      "assigned_employee_id": "102"
+    },
+    {
+      "task_id": "C-01-002",
+      "name": "知识切片自动生成",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "林对齐(106)",
+      "assigned_employee_id": "106"
+    },
+    {
+      "task_id": "C-01-003",
+      "name": "插件自动化封装",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "黄漂移(107)",
+      "assigned_employee_id": "107"
+    },
+    {
+      "task_id": "C-01-004",
+      "name": "智能定价系统",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "周进化(108)",
+      "assigned_employee_id": "108"
+    },
+    {
+      "task_id": "C-01-005",
+      "name": "总控后台监控",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "吴模板(109)",
+      "assigned_employee_id": "109"
+    },
+    {
+      "task_id": "C-01-006",
+      "name": "个性化进化决策",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "陈元灵(102)",
+      "assigned_employee_id": "102"
+    },
+    {
+      "task_id": "C-01-007",
+      "name": "用户个人知识图谱",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "林对齐(106)",
+      "assigned_employee_id": "106"
+    },
+    {
+      "task_id": "C-01-008",
+      "name": "知识实时同步",
+      "responsible": "01_紫微帝星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "01_紫微帝星",
+      "source": "/workspace/projects/workspace/incoming/10_紫微帝星_元灵层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "黄漂移(107)",
+      "assigned_employee_id": "107"
+    },
+    {
+      "task_id": "Task-01",
+      "name": "多模型统一接入协议设计",
+      "responsible": "禄存A",
+      "workload": "3周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "周禄存(111)",
+      "assigned_employee_id": "111"
+    },
+    {
+      "task_id": "Task-02",
+      "name": "SpeechLLM接入实现",
+      "responsible": "禄存B",
+      "workload": "4周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "郑路由(112)",
+      "assigned_employee_id": "112"
+    },
+    {
+      "task_id": "Task-03",
+      "name": "智能调度引擎开发",
+      "responsible": "禄存C",
+      "workload": "6周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "王规划(113)",
+      "assigned_employee_id": "113"
+    },
+    {
+      "task_id": "Task-04",
+      "name": "模型注册中心建设",
+      "responsible": "禄存D",
+      "workload": "3周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "冯优化(114)",
+      "assigned_employee_id": "114"
+    },
+    {
+      "task_id": "Task-05",
+      "name": "性能监控系统开发",
+      "responsible": "禄存E",
+      "workload": "4周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "钱调度(115)",
+      "assigned_employee_id": "115"
+    },
+    {
+      "task_id": "Task-06",
+      "name": "成本优化算法开发",
+      "responsible": "禄存F",
+      "workload": "3周",
+      "priority": "P1",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "郑路由(112)",
+      "assigned_employee_id": "112"
+    },
+    {
+      "task_id": "Task-07",
+      "name": "系统集成测试",
+      "responsible": "禄存G",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "周禄存(111)",
+      "assigned_employee_id": "111"
+    },
+    {
+      "task_id": "Task-08",
+      "name": "文档编写与交付",
+      "responsible": "禄存H",
+      "workload": "1周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "郑路由(112)",
+      "assigned_employee_id": "112"
+    },
+    {
+      "task_id": "C-02-001",
+      "name": "多模型统一接入",
+      "responsible": "02_禄存星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "王规划(113)",
+      "assigned_employee_id": "113"
+    },
+    {
+      "task_id": "C-02-002",
+      "name": "智能调度引擎",
+      "responsible": "02_禄存星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "冯优化(114)",
+      "assigned_employee_id": "114"
+    },
+    {
+      "task_id": "C-02-003",
+      "name": "成本优化",
+      "responsible": "02_禄存星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "钱调度(115)",
+      "assigned_employee_id": "115"
+    },
+    {
+      "task_id": "C-02-004",
+      "name": "性能监控",
+      "responsible": "02_禄存星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "周禄存(111)",
+      "assigned_employee_id": "111"
+    },
+    {
+      "task_id": "C-02-005",
+      "name": "模型自动注册",
+      "responsible": "02_禄存星组",
+      "workload": "2-4周",
+      "priority": "P1",
+      "star": "02_禄存星",
+      "source": "/workspace/projects/workspace/incoming/11_禄存星_调度层_第三期开发计划.md",
+      "from_matrix": true,
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "王规划(113)",
+      "assigned_employee_id": "113"
+    },
+    {
+      "task_id": "OBJ-03-001",
+      "name": "个性化特征记忆库",
+      "responsible": "03_巨门星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "03_巨门星",
+      "source": "/workspace/projects/workspace/incoming/12_巨门星_记忆层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "蒋巨门(119)",
+      "assigned_employee_id": "119"
+    },
+    {
+      "task_id": "OBJ-03-002",
+      "name": "智能检索系统",
+      "responsible": "03_巨门星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "03_巨门星",
+      "source": "/workspace/projects/workspace/incoming/12_巨门星_记忆层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "沈记忆(120)",
+      "assigned_employee_id": "120"
+    },
+    {
+      "task_id": "OBJ-03-003",
+      "name": "记忆持久化",
+      "responsible": "03_巨门星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "03_巨门星",
+      "source": "/workspace/projects/workspace/incoming/12_巨门星_记忆层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "韩向量(121)",
+      "assigned_employee_id": "121"
+    },
+    {
+      "task_id": "OBJ-04-001",
+      "name": "个性化人格微调系统",
+      "responsible": "04_廉贞星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "04_廉贞星",
+      "source": "/workspace/projects/workspace/incoming/14_廉贞星_人格层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "伍廉贞(163)",
+      "assigned_employee_id": "163"
+    },
+    {
+      "task_id": "OBJ-04-002",
+      "name": "数字分身系统",
+      "responsible": "04_廉贞星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "04_廉贞星",
+      "source": "/workspace/projects/workspace/incoming/14_廉贞星_人格层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "余情绪(164)",
+      "assigned_employee_id": "164"
+    },
+    {
+      "task_id": "OBJ-04-003",
+      "name": "人设一致性保障",
+      "responsible": "04_廉贞星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "04_廉贞星",
+      "source": "/workspace/projects/workspace/incoming/14_廉贞星_人格层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "元人格(165)",
+      "assigned_employee_id": "165"
+    },
+    {
+      "task_id": "OBJ-05-001",
+      "name": "10万级插件库与能力分级",
+      "responsible": "05_武曲星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "05_武曲星",
+      "source": "/workspace/projects/workspace/incoming/15_武曲星_技能层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "谢武功(127)",
+      "assigned_employee_id": "127"
+    },
+    {
+      "task_id": "OBJ-05-002",
+      "name": "插件自动化生产与定价系统（紫微星协同）",
+      "responsible": "05_武曲星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "05_武曲星",
+      "source": "/workspace/projects/workspace/incoming/15_武曲星_技能层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "邹接口(128)",
+      "assigned_employee_id": "128"
+    },
+    {
+      "task_id": "OBJ-05-003",
+      "name": "五大宪法铁律执行",
+      "responsible": "05_武曲星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "05_武曲星",
+      "source": "/workspace/projects/workspace/incoming/15_武曲星_技能层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "喻发现(129)",
+      "assigned_employee_id": "129"
+    },
+    {
+      "task_id": "OBJ-06-001",
+      "name": "任务流程自动化",
+      "responsible": "06_破军星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "06_破军星",
+      "source": "/workspace/projects/workspace/incoming/16_破军星_执行层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "章破军(133)",
+      "assigned_employee_id": "133"
+    },
+    {
+      "task_id": "OBJ-06-002",
+      "name": "多插件协同执行",
+      "responsible": "06_破军星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "06_破军星",
+      "source": "/workspace/projects/workspace/incoming/16_破军星_执行层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "云沙箱(134)",
+      "assigned_employee_id": "134"
+    },
+    {
+      "task_id": "OBJ-06-003",
+      "name": "智能错误处理",
+      "responsible": "06_破军星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "06_破军星",
+      "source": "/workspace/projects/workspace/incoming/16_破军星_执行层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "苏容器(135)",
+      "assigned_employee_id": "135"
+    },
+    {
+      "task_id": "OBJ-07-001",
+      "name": "灵活计费引擎v2.0（算力成本导向+能力梯度定价）",
+      "responsible": "07_左辅星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "07_左辅星",
+      "source": "/workspace/projects/workspace/incoming/17_左辅星_底座层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "倪左辅(146)",
+      "assigned_employee_id": "146"
+    },
+    {
+      "task_id": "OBJ-07-002",
+      "name": "智能总控后台",
+      "responsible": "07_左辅星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "07_左辅星",
+      "source": "/workspace/projects/workspace/incoming/17_左辅星_底座层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "汤K8s(147)",
+      "assigned_employee_id": "147"
+    },
+    {
+      "task_id": "OBJ-07-003",
+      "name": "五端统一部署",
+      "responsible": "07_左辅星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "07_左辅星",
+      "source": "/workspace/projects/workspace/incoming/17_左辅星_底座层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "殷用户(148)",
+      "assigned_employee_id": "148"
+    },
+    {
+      "task_id": "OBJ-07-004",
+      "name": "资源管理",
+      "responsible": "07_左辅星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "07_左辅星",
+      "source": "/workspace/projects/workspace/incoming/17_左辅星_底座层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "罗隔离(149)",
+      "assigned_employee_id": "149"
+    },
+    {
+      "task_id": "OBJ-08-001",
+      "name": "计费权限控制v2.0",
+      "responsible": "08_右弼星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "08_右弼星",
+      "source": "/workspace/projects/workspace/incoming/18_右弼星_安全层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "周右弼(105)",
+      "assigned_employee_id": "105"
+    },
+    {
+      "task_id": "OBJ-08-002",
+      "name": "等保三级合规",
+      "responsible": "08_右弼星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "08_右弼星",
+      "source": "/workspace/projects/workspace/incoming/18_右弼星_安全层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "乐法律(156)",
+      "assigned_employee_id": "156"
+    },
+    {
+      "task_id": "OBJ-08-003",
+      "name": "数据安全",
+      "responsible": "08_右弼星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "08_右弼星",
+      "source": "/workspace/projects/workspace/incoming/18_右弼星_安全层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "于道德(157)",
+      "assigned_employee_id": "157"
+    },
+    {
+      "task_id": "OBJ-09-001",
+      "name": "五端统一交互协议",
+      "responsible": "09_贪狼星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "source": "/workspace/projects/workspace/incoming/13_贪狼星_交互层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "薛贪狼(143)",
+      "assigned_employee_id": "143"
+    },
+    {
+      "task_id": "OBJ-09-002",
+      "name": "跨端状态同步",
+      "responsible": "09_贪狼星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "source": "/workspace/projects/workspace/incoming/13_贪狼星_交互层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "雷ASR(144)",
+      "assigned_employee_id": "144"
+    },
+    {
+      "task_id": "OBJ-09-003",
+      "name": "性能优化",
+      "responsible": "09_贪狼星组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "source": "/workspace/projects/workspace/incoming/13_贪狼星_交互层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "贺TTS(145)",
+      "assigned_employee_id": "145"
+    },
+    {
+      "task_id": "OBJ-10-001",
+      "name": "官方网站与文档",
+      "responsible": "10_辅弼星辰组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "source": "/workspace/projects/workspace/incoming/19_辅弼星辰_扩展层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "齐辅弼(161)",
+      "assigned_employee_id": "161"
+    },
+    {
+      "task_id": "OBJ-10-002",
+      "name": "开发者开放平台",
+      "responsible": "10_辅弼星辰组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "source": "/workspace/projects/workspace/incoming/19_辅弼星辰_扩展层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "康网关(162)",
+      "assigned_employee_id": "162"
+    },
+    {
+      "task_id": "OBJ-10-003",
+      "name": "插件市场",
+      "responsible": "10_辅弼星辰组",
+      "workload": "2-4周",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "source": "/workspace/projects/workspace/incoming/19_辅弼星辰_扩展层_第三期开发计划.md",
+      "from_objectives": true,
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "和产品(168)",
+      "assigned_employee_id": "168"
+    },
+    {
+      "task_id": "P2-01-001",
+      "name": "UI美化优化",
+      "responsible": "陈元灵(102)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "陈元灵(102)",
+      "assigned_employee_id": "102"
+    },
+    {
+      "task_id": "P2-01-002",
+      "name": "性能微调",
+      "responsible": "张伟(011)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "林对齐(106)",
+      "assigned_employee_id": "106"
+    },
+    {
+      "task_id": "P2-01-003",
+      "name": "用户体验优化",
+      "responsible": "刘斌(012)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "黄漂移(107)",
+      "assigned_employee_id": "107"
+    },
+    {
+      "task_id": "P2-02-004",
+      "name": "调度算法优化",
+      "responsible": "周禄存(111)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "冯优化(114)",
+      "assigned_employee_id": "114"
+    },
+    {
+      "task_id": "P2-02-005",
+      "name": "负载均衡优化",
+      "responsible": "郑路由(112)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "钱调度(115)",
+      "assigned_employee_id": "115"
+    },
+    {
+      "task_id": "P2-02-006",
+      "name": "缓存策略优化",
+      "responsible": "冯优化(114)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "周禄存(111)",
+      "assigned_employee_id": "111"
+    },
+    {
+      "task_id": "P2-03-007",
+      "name": "记忆压缩算法",
+      "responsible": "蒋巨门(119)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "杨检索(122)",
+      "assigned_employee_id": "122"
+    },
+    {
+      "task_id": "P2-03-008",
+      "name": "检索速度优化",
+      "responsible": "沈记忆(120)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "朱图谱(123)",
+      "assigned_employee_id": "123"
+    },
+    {
+      "task_id": "P2-04-009",
+      "name": "人格模板丰富",
+      "responsible": "伍廉贞(163)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "孟一致(166)",
+      "assigned_employee_id": "166"
+    },
+    {
+      "task_id": "P2-04-010",
+      "name": "情绪识别优化",
+      "responsible": "余情绪(164)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "平心理(167)",
+      "assigned_employee_id": "167"
+    },
+    {
+      "task_id": "P2-05-011",
+      "name": "插件模板扩充",
+      "responsible": "谢武功(127)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "柏依赖(130)",
+      "assigned_employee_id": "130"
+    },
+    {
+      "task_id": "P2-05-012",
+      "name": "插件测试工具",
+      "responsible": "邹接口(128)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "水版本(131)",
+      "assigned_employee_id": "131"
+    },
+    {
+      "task_id": "P2-06-013",
+      "name": "执行流程优化",
+      "responsible": "章破军(133)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "潘外呼(136)",
+      "assigned_employee_id": "136"
+    },
+    {
+      "task_id": "P2-06-014",
+      "name": "错误处理增强",
+      "responsible": "云沙箱(134)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "葛消息(137)",
+      "assigned_employee_id": "137"
+    },
+    {
+      "task_id": "P2-07-015",
+      "name": "部署脚本优化",
+      "responsible": "倪左辅(146)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "毕配置(150)",
+      "assigned_employee_id": "150"
+    },
+    {
+      "task_id": "P2-07-016",
+      "name": "监控指标扩展",
+      "responsible": "汤K8s(147)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "倪左辅(146)",
+      "assigned_employee_id": "146"
+    },
+    {
+      "task_id": "P2-08-017",
+      "name": "安全策略完善",
+      "responsible": "周右弼(105)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "时权限(158)",
+      "assigned_employee_id": "158"
+    },
+    {
+      "task_id": "P2-08-018",
+      "name": "审计报表优化",
+      "responsible": "乐法律(156)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "皮审计(159)",
+      "assigned_employee_id": "159"
+    },
+    {
+      "task_id": "P2-09-019",
+      "name": "交互界面优化",
+      "responsible": "薛贪狼(143)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "贡数字人(176)",
+      "assigned_employee_id": "176"
+    },
+    {
+      "task_id": "P2-09-020",
+      "name": "语音识别优化",
+      "responsible": "雷ASR(144)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "赏界面(177)",
+      "assigned_employee_id": "177"
+    },
+    {
+      "task_id": "P2-10-021",
+      "name": "文档结构优化",
+      "responsible": "邹接口(128)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "穆文档(169)",
+      "assigned_employee_id": "169"
+    },
+    {
+      "task_id": "P2-10-022",
+      "name": "开发者体验优化",
+      "responsible": "喻发现(129)",
+      "workload": "1-2周",
+      "priority": "P2",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "财SDK(183)",
+      "assigned_employee_id": "183"
+    },
+    {
+      "task_id": "P3-01-001",
+      "name": "多语言知识库",
+      "responsible": "陈元灵(102)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "周进化(108)",
+      "assigned_employee_id": "108"
+    },
+    {
+      "task_id": "P3-01-002",
+      "name": "跨平台知识同步",
+      "responsible": "张伟(011)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "吴模板(109)",
+      "assigned_employee_id": "109"
+    },
+    {
+      "task_id": "P3-02-003",
+      "name": "第三方模型接入",
+      "responsible": "周禄存(111)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "郑路由(112)",
+      "assigned_employee_id": "112"
+    },
+    {
+      "task_id": "P3-02-004",
+      "name": "自定义调度策略",
+      "responsible": "郑路由(112)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "王规划(113)",
+      "assigned_employee_id": "113"
+    },
+    {
+      "task_id": "P3-03-005",
+      "name": "记忆导出功能",
+      "responsible": "蒋巨门(119)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "蒋巨门(119)",
+      "assigned_employee_id": "119"
+    },
+    {
+      "task_id": "P3-03-006",
+      "name": "记忆迁移工具",
+      "responsible": "沈记忆(120)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "沈记忆(120)",
+      "assigned_employee_id": "120"
+    },
+    {
+      "task_id": "P3-04-007",
+      "name": "人格导入导出",
+      "responsible": "伍廉贞(163)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "伍廉贞(163)",
+      "assigned_employee_id": "163"
+    },
+    {
+      "task_id": "P3-04-008",
+      "name": "情绪分析报告",
+      "responsible": "余情绪(164)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "余情绪(164)",
+      "assigned_employee_id": "164"
+    },
+    {
+      "task_id": "P3-05-009",
+      "name": "插件市场推广",
+      "responsible": "谢武功(127)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "谢武功(127)",
+      "assigned_employee_id": "127"
+    },
+    {
+      "task_id": "P3-05-010",
+      "name": "插件评分系统",
+      "responsible": "邹接口(128)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "邹接口(128)",
+      "assigned_employee_id": "128"
+    },
+    {
+      "task_id": "P3-06-011",
+      "name": "工作流可视化",
+      "responsible": "章破军(133)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "章破军(133)",
+      "assigned_employee_id": "133"
+    },
+    {
+      "task_id": "P3-06-012",
+      "name": "任务模板库",
+      "responsible": "云沙箱(134)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "云沙箱(134)",
+      "assigned_employee_id": "134"
+    },
+    {
+      "task_id": "P3-07-013",
+      "name": "多云部署支持",
+      "responsible": "倪左辅(146)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "汤K8s(147)",
+      "assigned_employee_id": "147"
+    },
+    {
+      "task_id": "P3-07-014",
+      "name": "成本优化工具",
+      "responsible": "汤K8s(147)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "殷用户(148)",
+      "assigned_employee_id": "148"
+    },
+    {
+      "task_id": "P3-08-015",
+      "name": "GDPR合规支持",
+      "responsible": "周右弼(105)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "周右弼(105)",
+      "assigned_employee_id": "105"
+    },
+    {
+      "task_id": "P3-08-016",
+      "name": "安全审计自动化",
+      "responsible": "乐法律(156)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "乐法律(156)",
+      "assigned_employee_id": "156"
+    },
+    {
+      "task_id": "P3-09-017",
+      "name": "视频通话功能",
+      "responsible": "薛贪狼(143)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "薛贪狼(143)",
+      "assigned_employee_id": "143"
+    },
+    {
+      "task_id": "P3-09-018",
+      "name": "屏幕共享功能",
+      "responsible": "雷ASR(144)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "雷ASR(144)",
+      "assigned_employee_id": "144"
+    },
+    {
+      "task_id": "P3-10-019",
+      "name": "高级文档生成",
+      "responsible": "邹接口(128)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "齐辅弼(161)",
+      "assigned_employee_id": "161"
+    },
+    {
+      "task_id": "P3-10-020",
+      "name": "API测试套件",
+      "responsible": "喻发现(129)",
+      "workload": "2-3周",
+      "priority": "P3",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "康网关(162)",
+      "assigned_employee_id": "162"
+    },
+    {
+      "task_id": "P4-01-001",
+      "name": "AI模型微调平台",
+      "responsible": "陈元灵(102)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "陈元灵(102)",
+      "assigned_employee_id": "102"
+    },
+    {
+      "task_id": "P4-01-002",
+      "name": "知识图谱可视化",
+      "responsible": "张伟(011)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "assigned_employees": [
+        "陈元灵(102)",
+        "张伟(011)",
+        "刘斌(012)"
+      ],
+      "assigned_employee": "林对齐(106)",
+      "assigned_employee_id": "106"
+    },
+    {
+      "task_id": "P4-02-003",
+      "name": "SpeechLLM深度集成",
+      "responsible": "周禄存(111)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "冯优化(114)",
+      "assigned_employee_id": "114"
+    },
+    {
+      "task_id": "P4-02-004",
+      "name": "模型热切换引擎",
+      "responsible": "郑路由(112)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "assigned_employees": [
+        "周禄存(111)",
+        "郑路由(112)",
+        "冯优化(114)"
+      ],
+      "assigned_employee": "钱调度(115)",
+      "assigned_employee_id": "115"
+    },
+    {
+      "task_id": "P4-03-005",
+      "name": "长期记忆压缩",
+      "responsible": "蒋巨门(119)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "韩向量(121)",
+      "assigned_employee_id": "121"
+    },
+    {
+      "task_id": "P4-03-006",
+      "name": "记忆隐私加密",
+      "responsible": "沈记忆(120)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈记忆(120)",
+        "韩向量(121)"
+      ],
+      "assigned_employee": "杨检索(122)",
+      "assigned_employee_id": "122"
+    },
+    {
+      "task_id": "P4-04-007",
+      "name": "人格A/B测试",
+      "responsible": "伍廉贞(163)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "元人格(165)",
+      "assigned_employee_id": "165"
+    },
+    {
+      "task_id": "P4-04-008",
+      "name": "情绪预测引擎",
+      "responsible": "余情绪(164)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余情绪(164)",
+        "元人格(165)"
+      ],
+      "assigned_employee": "孟一致(166)",
+      "assigned_employee_id": "166"
+    },
+    {
+      "task_id": "P4-05-009",
+      "name": "插件AI增强",
+      "responsible": "谢武功(127)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "喻发现(129)",
+      "assigned_employee_id": "129"
+    },
+    {
+      "task_id": "P4-05-010",
+      "name": "插件生态联盟",
+      "responsible": "邹接口(128)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹接口(128)",
+        "喻发现(129)"
+      ],
+      "assigned_employee": "柏依赖(130)",
+      "assigned_employee_id": "130"
+    },
+    {
+      "task_id": "P4-06-011",
+      "name": "跨系统编排",
+      "responsible": "章破军(133)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "苏容器(135)",
+      "assigned_employee_id": "135"
+    },
+    {
+      "task_id": "P4-06-012",
+      "name": "任务链智能优化",
+      "responsible": "云沙箱(134)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "assigned_employees": [
+        "章破军(133)",
+        "云沙箱(134)",
+        "苏容器(135)"
+      ],
+      "assigned_employee": "潘外呼(136)",
+      "assigned_employee_id": "136"
+    },
+    {
+      "task_id": "P4-07-013",
+      "name": "智能扩缩容",
+      "responsible": "倪左辅(146)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "罗隔离(149)",
+      "assigned_employee_id": "149"
+    },
+    {
+      "task_id": "P4-07-014",
+      "name": "灾难自动恢复",
+      "responsible": "汤K8s(147)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "assigned_employees": [
+        "倪左辅(146)",
+        "汤K8s(147)",
+        "殷用户(148)"
+      ],
+      "assigned_employee": "毕配置(150)",
+      "assigned_employee_id": "150"
+    },
+    {
+      "task_id": "P4-08-015",
+      "name": "零信任架构",
+      "responsible": "周右弼(105)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "于道德(157)",
+      "assigned_employee_id": "157"
+    },
+    {
+      "task_id": "P4-08-016",
+      "name": "安全威胁狩猎",
+      "responsible": "乐法律(156)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "assigned_employees": [
+        "周右弼(105)",
+        "乐法律(156)",
+        "于道德(157)"
+      ],
+      "assigned_employee": "时权限(158)",
+      "assigned_employee_id": "158"
+    },
+    {
+      "task_id": "P4-09-017",
+      "name": "多模态理解",
+      "responsible": "薛贪狼(143)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "贺TTS(145)",
+      "assigned_employee_id": "145"
+    },
+    {
+      "task_id": "P4-09-018",
+      "name": "情感计算引擎",
+      "responsible": "雷ASR(144)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷ASR(144)",
+        "贺TTS(145)"
+      ],
+      "assigned_employee": "贡数字人(176)",
+      "assigned_employee_id": "176"
+    },
+    {
+      "task_id": "P4-10-019",
+      "name": "开发者社区平台",
+      "responsible": "邹接口(128)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "和产品(168)",
+      "assigned_employee_id": "168"
+    },
+    {
+      "task_id": "P4-10-020",
+      "name": "插件商业化平台",
+      "responsible": "喻发现(129)",
+      "workload": "3-4周",
+      "priority": "P4",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "assigned_employees": [
+        "邹接口(128)",
+        "喻发现(129)",
+        "柏依赖(130)"
+      ],
+      "assigned_employee": "穆文档(169)",
+      "assigned_employee_id": "169"
+    },
+    {
+      "task_id": "P5-01-001",
+      "name": "GPT-5等下一代模型接入",
+      "responsible": "陈元灵(102)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "task_type": "未来规划"
+    },
+    {
+      "task_id": "P5-01-002",
+      "name": "量子计算知识库探索",
+      "responsible": "张伟(011)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "01_紫微帝星",
+      "source": "auto-generated",
+      "module": "01_ziwei_star",
+      "task_type": "前沿技术"
+    },
+    {
+      "task_id": "P5-02-003",
+      "name": "AI模型联邦学习框架",
+      "responsible": "周禄存(111)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-02-004",
+      "name": "模型即服务平台（MaaS）",
+      "responsible": "郑路由(112)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "02_禄存星",
+      "source": "auto-generated",
+      "module": "02_lucun_star",
+      "task_type": "长期研究"
+    },
+    {
+      "task_id": "P5-03-005",
+      "name": "脑机接口记忆同步",
+      "responsible": "蒋巨门(119)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "task_type": "前沿技术"
+    },
+    {
+      "task_id": "P5-03-006",
+      "name": "记忆云备份与恢复",
+      "responsible": "沈记忆(120)",
+      "workload": "3-4周",
+      "priority": "P5",
+      "star": "03_巨门星",
+      "source": "auto-generated",
+      "module": "03_jumen_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-04-007",
+      "name": "人格AI自我进化系统",
+      "responsible": "伍廉贞(163)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "task_type": "长期研究"
+    },
+    {
+      "task_id": "P5-04-008",
+      "name": "多人格融合算法",
+      "responsible": "余情绪(164)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "04_廉贞星",
+      "source": "auto-generated",
+      "module": "04_lianzheng_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-05-009",
+      "name": "插件AI自主生成系统",
+      "responsible": "谢武功(127)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "task_type": "前沿技术"
+    },
+    {
+      "task_id": "P5-05-010",
+      "name": "插件区块链确权",
+      "responsible": "邹接口(128)",
+      "workload": "3-4周",
+      "priority": "P5",
+      "star": "05_武曲星",
+      "source": "auto-generated",
+      "module": "05_wuqu_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-06-011",
+      "name": "跨系统任务编排引擎",
+      "responsible": "章破军(133)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "task_type": "长期研究"
+    },
+    {
+      "task_id": "P5-06-012",
+      "name": "自主决策AI代理",
+      "responsible": "云沙箱(134)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "06_破军星",
+      "source": "auto-generated",
+      "module": "06_pojun_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-07-013",
+      "name": "边缘计算部署框架",
+      "responsible": "倪左辅(146)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "task_type": "前沿技术"
+    },
+    {
+      "task_id": "P5-07-014",
+      "name": "无服务器架构迁移",
+      "responsible": "汤K8s(147)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "07_左辅星",
+      "source": "auto-generated",
+      "module": "07_zuofu_star",
+      "task_type": "未来规划"
+    },
+    {
+      "task_id": "P5-08-015",
+      "name": "AI安全攻防系统",
+      "responsible": "周右弼(105)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "task_type": "长期研究"
+    },
+    {
+      "task_id": "P5-08-016",
+      "name": "隐私计算平台",
+      "responsible": "乐法律(156)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "08_右弼星",
+      "source": "auto-generated",
+      "module": "08_youbi_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-09-017",
+      "name": "全息投影交互界面",
+      "responsible": "薛贪狼(143)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "task_type": "前沿技术"
+    },
+    {
+      "task_id": "P5-09-018",
+      "name": "脑波控制接口",
+      "responsible": "雷ASR(144)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "09_贪狼星",
+      "source": "auto-generated",
+      "module": "09_tanlang_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "P5-10-019",
+      "name": "AI开发者生态系统",
+      "responsible": "邹接口(128)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "task_type": "长期研究"
+    },
+    {
+      "task_id": "P5-10-020",
+      "name": "插件AI市场预测平台",
+      "responsible": "喻发现(129)",
+      "workload": "4-6周",
+      "priority": "P5",
+      "star": "10_辅弼星辰",
+      "source": "auto-generated",
+      "module": "10_fubi_star",
+      "task_type": "实验性功能"
+    },
+    {
+      "task_id": "WEB-001",
+      "name": "官网首页设计开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "tanlang_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "葛浩(014)",
+        "昌艺(015)"
+      ],
+      "assigned_employee": "葛浩(014)",
+      "assigned_employee_id": "014",
+      "workload": "2周",
+      "description": "官网首页开发 - 产品介绍、核心功能展示、Hero section、特性卡片、CTA按钮"
+    },
+    {
+      "task_id": "WEB-002",
+      "name": "官网产品页面开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "tanlang_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "葛浩(014)",
+        "昌艺(015)"
+      ],
+      "assigned_employee": "葛浩(014)",
+      "assigned_employee_id": "014",
+      "workload": "2周",
+      "description": "官网产品页面开发 - 功能详情、技术架构、应用场景、成功案例"
+    },
+    {
+      "task_id": "WEB-003",
+      "name": "官网定价页面开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "tanlang_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "葛浩(014)",
+        "昌艺(015)"
+      ],
+      "assigned_employee": "葛浩(014)",
+      "assigned_employee_id": "014",
+      "workload": "2周",
+      "description": "官网定价页面开发 - 价格方案、套餐对比、付费流程、FAQ"
+    },
+    {
+      "task_id": "WEB-004",
+      "name": "用户社区功能开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "tanlang_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "陈磊(016)",
+        "周杰(017)"
+      ],
+      "assigned_employee": "陈磊(016)",
+      "assigned_employee_id": "016",
+      "workload": "2周",
+      "description": "用户社区功能 - 用户讨论区、案例分享、问答系统、点赞评论"
+    },
+    {
+      "task_id": "WEB-005",
+      "name": "用户社区社交功能",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "tanlang_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "陈磊(016)",
+        "周杰(017)"
+      ],
+      "assigned_employee": "陈磊(016)",
+      "assigned_employee_id": "016",
+      "workload": "2周",
+      "description": "用户社区社交功能 - 关注机制、私信系统、个人主页、动态发布"
+    },
+    {
+      "task_id": "DOC-001",
+      "name": "产品手册编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "module": "fubi_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "马丽(018)",
+        "郑睿(008)"
+      ],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "workload": "3周",
+      "description": "产品手册编写 - 产品介绍、功能特性、技术架构、应用场景、成功案例"
+    },
+    {
+      "task_id": "DOC-002",
+      "name": "用户手册编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "module": "fubi_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "马丽(018)",
+        "郑睿(008)"
+      ],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "workload": "2周",
+      "description": "用户手册编写 - 快速开始、使用指南、常见问题、故障排查、最佳实践"
+    },
+    {
+      "task_id": "DOC-003",
+      "name": "开发者手册编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "module": "fubi_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "马丽(018)",
+        "郑睿(008)"
+      ],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "workload": "3周",
+      "description": "开发者手册编写 - API参考、SDK使用、插件开发、集成指南、调试技巧"
+    },
+    {
+      "task_id": "DOC-004",
+      "name": "文档系统结构搭建",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "module": "fubi_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "马丽(018)",
+        "郑睿(008)"
+      ],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "workload": "1周",
+      "description": "文档系统结构搭建 - Docusaurus配置、侧边栏导航、版本控制、搜索功能"
+    },
+    {
+      "task_id": "DOC-005",
+      "name": "API参考文档编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_辅弼星辰",
+      "module": "fubi_star",
+      "source": "/workspace/projects/workspace/incoming/02_玄玑AI数字人引擎第三期开发计划.md",
+      "assigned_employees": [
+        "马丽(018)",
+        "郑睿(008)"
+      ],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "workload": "2周",
+      "description": "API参考文档编写 - 接口定义、请求参数、响应格式、错误代码、示例代码"
+    },
+    {
+      "task_id": "Task-9",
+      "name": "模型热更新机制",
+      "responsible": "周禄存(111)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "02_禄存星",
+      "module": "02-禄存星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "周禄存(111)",
+        "吴存真(112)",
+        "郑存义(113)",
+        "钱存信(114)",
+        "冯存智(115)",
+        "陈存理(116)",
+        "褚存道(117)",
+        "卫存德(118)"
+      ],
+      "assigned_employee": "周禄存(111)",
+      "assigned_employee_id": "111"
+    },
+    {
+      "task_id": "Task-10",
+      "name": "Neo4j知识图谱集成",
+      "responsible": "蒋巨门(119)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "03_巨门星",
+      "module": "03-巨门星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "蒋巨门(119)",
+        "沈巨明(120)",
+        "韩巨亮(121)",
+        "杨巨知(122)",
+        "朱巨信(123)",
+        "秦巨诚(124)",
+        "许巨真(125)",
+        "戚巨实(126)"
+      ],
+      "assigned_employee": "蒋巨门(119)",
+      "assigned_employee_id": "119"
+    },
+    {
+      "task_id": "Task-11",
+      "name": "人设状态管理",
+      "responsible": "伍廉贞(163)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "04_廉贞星",
+      "module": "04-廉贞星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余廉心(164)",
+        "元廉情(165)",
+        "孟廉意(166)",
+        "李廉智(167)"
+      ],
+      "assigned_employee": "伍廉贞(163)",
+      "assigned_employee_id": "163"
+    },
+    {
+      "task_id": "Task-12",
+      "name": "情感分析",
+      "responsible": "伍廉贞(163)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "04_廉贞星",
+      "module": "04-廉贞星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "伍廉贞(163)",
+        "余廉心(164)",
+        "元廉情(165)",
+        "孟廉意(166)",
+        "李廉智(167)"
+      ],
+      "assigned_employee": "伍廉贞(163)",
+      "assigned_employee_id": "163"
+    },
+    {
+      "task_id": "Task-13",
+      "name": "插件市场运营",
+      "responsible": "谢武功(127)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "05_武曲星",
+      "module": "05-武曲星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "谢武功(127)",
+        "邹武全(128)",
+        "喻武能(129)",
+        "柏武技(130)",
+        "水武库(131)",
+        "窦武备(132)",
+        "章破军(133)",
+        "云破敌(134)",
+        "苏破阵(135)",
+        "潘破晓(136)",
+        "葛破浪(137)",
+        "奚破浪(138)",
+        "范破空(139)",
+        "柯破云(140)",
+        "厉破风(141)",
+        "岑破雷(142)"
+      ],
+      "assigned_employee": "谢武功(127)",
+      "assigned_employee_id": "127"
+    },
+    {
+      "task_id": "Task-14",
+      "name": "DAG引擎实现",
+      "responsible": "薛贪狼(143)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "06_破军星",
+      "module": "06-破军星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "薛贪狼(143)",
+        "雷贪音(144)",
+        "贺贪形(145)",
+        "贡志强(176)",
+        "赏志明(177)",
+        "巴图(178)",
+        "弓志明(179)",
+        "母志明(180)"
+      ],
+      "assigned_employee": "薛贪狼(143)",
+      "assigned_employee_id": "143"
+    },
+    {
+      "task_id": "Task-15",
+      "name": "数据加密（AES-256）",
+      "responsible": "乐右弼(156)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "08_右弼星",
+      "module": "08-右弼星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "乐右弼(156)",
+        "于右护(157)",
+        "时右卫(158)",
+        "皮右防(159)",
+        "卞右盾(160)",
+        "齐辅弼(161)",
+        "康辅星(162)"
+      ],
+      "assigned_employee": "乐右弼(156)",
+      "assigned_employee_id": "156"
+    },
+    {
+      "task_id": "Task-16",
+      "name": "等保三级认证",
+      "responsible": "乐右弼(156)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "08_右弼星",
+      "module": "08-右弼星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "乐右弼(156)",
+        "于右护(157)",
+        "时右卫(158)",
+        "皮右防(159)",
+        "卞右盾(160)",
+        "齐辅弼(161)",
+        "康辅星(162)"
+      ],
+      "assigned_employee": "乐右弼(156)",
+      "assigned_employee_id": "156"
+    },
+    {
+      "task_id": "Task-17",
+      "name": "传输加密（TLS 1.3）",
+      "responsible": "乐右弼(156)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "08_右弼星",
+      "module": "08-右弼星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "乐右弼(156)",
+        "于右护(157)",
+        "时右卫(158)",
+        "皮右防(159)",
+        "卞右盾(160)",
+        "齐辅弼(161)",
+        "康辅星(162)"
+      ],
+      "assigned_employee": "乐右弼(156)",
+      "assigned_employee_id": "156"
+    },
+    {
+      "task_id": "Task-18",
+      "name": "统一交互适配层",
+      "responsible": "和产品(168)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "09-贪狼星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "和产品(168)",
+        "穆产品(169)",
+        "财市场(183)",
+        "干市场(184)",
+        "曲市场(185)",
+        "桥客服(188)",
+        "银客服(189)",
+        "言客服(190)"
+      ],
+      "assigned_employee": "和产品(168)",
+      "assigned_employee_id": "168"
+    },
+    {
+      "task_id": "Task-19",
+      "name": "全能力开放SDK",
+      "responsible": "和产品(168)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "09-贪狼星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "和产品(168)",
+        "穆产品(169)",
+        "财市场(183)",
+        "干市场(184)",
+        "曲市场(185)",
+        "桥客服(188)",
+        "银客服(189)",
+        "言客服(190)"
+      ],
+      "assigned_employee": "和产品(168)",
+      "assigned_employee_id": "168"
+    },
+    {
+      "task_id": "Task-20",
+      "name": "五端适配系统",
+      "responsible": "和产品(168)",
+      "workload": "2周",
+      "priority": "P0",
+      "star": "09_贪狼星",
+      "module": "09-贪狼星",
+      "source": "第三期开发文档分析",
+      "assigned_employees": [
+        "和产品(168)",
+        "穆产品(169)",
+        "财市场(183)",
+        "干市场(184)",
+        "曲市场(185)",
+        "桥客服(188)",
+        "银客服(189)",
+        "言客服(190)"
+      ],
+      "assigned_employee": "和产品(168)",
+      "assigned_employee_id": "168"
+    }
+  ],
+  "priority_summary": {
+    "P0": 49,
+    "P1": 4,
+    "P2": 22,
+    "P3": 20,
+    "P4": 20,
+    "P5": 20
+  },
+  "p5_categories": {
+    "未来规划": 2,
+    "实验性功能": 8,
+    "前沿技术": 5,
+    "长期研究": 5
+  },
+  "created_by": "李明远(001)",
+  "status": "ready_for_ultimate_launch_with_future_planning",
+  "star_summary": {
+    "01_紫微帝星": {
+      "P0": 13,
+      "P1": 2,
+      "P2": 3,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "02_禄存星": {
+      "P0": 11,
+      "P1": 2,
+      "P2": 3,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "03_巨门星": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "04_廉贞星": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "05_武曲星": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "06_破军星": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "07_左辅星": {
+      "P0": 4,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "08_右弼星": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "09_贪狼星": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    },
+    "10_辅弼星辰": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 2,
+      "P3": 2,
+      "P4": 2,
+      "P5": 2
+    }
+  }
+}

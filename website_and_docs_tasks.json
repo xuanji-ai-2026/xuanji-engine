@@ -1,0 +1,136 @@
+{
+  "website_tasks": [
+    {
+      "task_id": "WEB-001",
+      "name": "官网首页设计开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_tanlang_star",
+      "module": "tanlang_star",
+      "assigned_employees": ["葛浩(014)", "昌艺(015)"],
+      "assigned_employee": "葛浩(014)",
+      "assigned_employee_id": "014",
+      "description": "官网首页开发 - 产品介绍、核心功能展示、Hero section、特性卡片、CTA按钮",
+      "workload": "2周"
+    },
+    {
+      "task_id": "WEB-002",
+      "name": "官网产品页面开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_tanlang_star",
+      "module": "tanlang_star",
+      "assigned_employees": ["葛浩(014)", "昌艺(015)"],
+      "assigned_employee": "葛浩(014)",
+      "assigned_employee_id": "014",
+      "description": "官网产品页面开发 - 功能详情、技术架构、应用场景、成功案例",
+      "workload": "2周"
+    },
+    {
+      "task_id": "WEB-003",
+      "name": "官网定价页面开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_tanlang_star",
+      "module": "tanlang_star",
+      "assigned_employees": ["葛浩(014)", "昌艺(015)"],
+      "assigned_employee": "葛浩(014)",
+      "assigned_employee_id": "014",
+      "description": "官网定价页面开发 - 价格方案、套餐对比、付费流程、FAQ",
+      "workload": "2周"
+    },
+    {
+      "task_id": "WEB-004",
+      "name": "用户社区功能开发",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_tanlang_star",
+      "module": "tanlang_star",
+      "assigned_employees": ["陈磊(016)", "周杰(017)"],
+      "assigned_employee": "陈磊(016)",
+      "assigned_employee_id": "016",
+      "description": "用户社区功能 - 用户讨论区、案例分享、问答系统、点赞评论",
+      "workload": "2周"
+    },
+    {
+      "task_id": "WEB-005",
+      "name": "用户社区社交功能",
+      "category": "前端",
+      "priority": "P0",
+      "star": "09_tanlang_star",
+      "module": "tanlang_star",
+      "assigned_employees": ["陈磊(016)", "周杰(017)"],
+      "assigned_employee": "陈磊(016)",
+      "assigned_employee_id": "016",
+      "description": "用户社区社交功能 - 关注机制、私信系统、个人主页、动态发布",
+      "workload": "2周"
+    }
+  ],
+  "documentation_tasks": [
+    {
+      "task_id": "DOC-001",
+      "name": "产品手册编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_fubi_star",
+      "module": "fubi_star",
+      "assigned_employees": ["马丽(018)", "郑睿(008)"],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "description": "产品手册编写 - 产品介绍、功能特性、技术架构、应用场景、成功案例",
+      "workload": "3周"
+    },
+    {
+      "task_id": "DOC-002",
+      "name": "用户手册编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_fubi_star",
+      "module": "fubi_star",
+      "assigned_employees": ["马丽(018)", "郑睿(008)"],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "description": "用户手册编写 - 快速开始、使用指南、常见问题、故障排查、最佳实践",
+      "workload": "2周"
+    },
+    {
+      "task_id": "DOC-003",
+      "name": "开发者手册编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_fubi_star",
+      "module": "fubi_star",
+      "assigned_employees": ["马丽(018)", "郑睿(008)"],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "description": "开发者手册编写 - API参考、SDK使用、插件开发、集成指南、调试技巧",
+      "workload": "3周"
+    },
+    {
+      "task_id": "DOC-004",
+      "name": "文档系统结构搭建",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_fubi_star",
+      "module": "fubi_star",
+      "assigned_employees": ["马丽(018)", "郑睿(008)"],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "description": "文档系统结构搭建 - Docusaurus配置、侧边栏导航、版本控制、搜索功能",
+      "workload": "1周"
+    },
+    {
+      "task_id": "DOC-005",
+      "name": "API参考文档编写",
+      "category": "文档",
+      "priority": "P0",
+      "star": "10_fubi_star",
+      "module": "fubi_star",
+      "assigned_employees": ["马丽(018)", "郑睿(008)"],
+      "assigned_employee": "马丽(018)",
+      "assigned_employee_id": "018",
+      "description": "API参考文档编写 - 接口定义、请求参数、响应格式、错误代码、示例代码",
+      "workload": "2周"
+    }
+  ]
+}

@@ -55,21 +55,16 @@ class MultiProjectTaskQueue:
             self.queues[project].sort(key=lambda t: t.priority)
     
     def claim_task(self, project: str, employee_id: str) -> Optional[Task]:
-        """AI员工从指定项目领取任务（按优先级顺序）"""
+        """AI员工从指定项目领取任务"""
         if project not in self.queues:
             return None
         
-        # 查找待处理的任务，按优先级顺序
         for i, task in enumerate(self.queues[project]):
-            if task.status == TaskStatus.PENDING:
-                # 领取任务
+            if task.employee_id == employee_id and task.status == TaskStatus.PENDING:
                 task = self.queues[project].pop(i)
                 task.status = TaskStatus.IN_PROGRESS
-                # 更新任务中的employee_id为实际领取的员工ID
-                task.employee_id = employee_id
                 self.in_progress[f"{project}:{employee_id}"] = task
                 return task
-        
         return None
     
     def complete_task(self, project: str, employee_id: str):

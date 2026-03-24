@@ -1,0 +1,425 @@
+{
+  "missing_count": 70,
+  "tasks": [
+    {
+      "star": "未知",
+      "task_name": "实现: 基于用户全维度特征，自动决策人格调整、模型优化、知识更新策略",
+      "feature": "基于用户全维度特征，自动决策人格调整、模型优化、知识更新策略",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: ✅ 免费知识源管理模块v1.0",
+      "feature": "✅ 免费知识源管理模块v1.0",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: plaintext",
+      "feature": "plaintext",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: 官网、社区、文档的统一管理",
+      "feature": "官网、社区、文档的统一管理",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: ✅ 开源自建管理系统v1.0",
+      "feature": "✅ 开源自建管理系统v1.0",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: ✅ 知识闭环监控中心v1.0",
+      "feature": "✅ 知识闭环监控中心v1.0",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: 统一交互适配（Web/H5/客户端/App/小程序）",
+      "feature": "统一交互适配（Web/H5/客户端/App/小程序）",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: 五端适配系统",
+      "feature": "五端适配系统",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: 标准化模型接入协议（RESTful/gRPC），支持未来新技术的快速接入",
+      "feature": "标准化模型接入协议（RESTful/gRPC），支持未来新技术的快速接入",
+      "priority": "P2"
+    },
+    {
+      "star": "未知",
+      "task_name": "实现: 全维度特征采集（语音/行为/内容）",
+      "feature": "全维度特征采集（语音/行为/内容）",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: ✅ 集成测试报告",
+      "feature": "✅ 集成测试报告",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 机器人协议（UR、ABB、KUKA、Fanuc）",
+      "feature": "机器人协议（UR、ABB、KUKA、Fanuc）",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 铁律1：安装即拥有（100%满配）",
+      "feature": "铁律1：安装即拥有（100%满配）",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 扫描协议（TWAIN、WIA）",
+      "feature": "扫描协议（TWAIN、WIA）",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 插件性能 **：",
+      "feature": "插件性能 **：",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 密级 **: 绝密·战略核心",
+      "feature": "密级 **: 绝密·战略核心",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: ✅ 性能优化版本",
+      "feature": "✅ 性能优化版本",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 插件元数据库（PostgreSQL）",
+      "feature": "插件元数据库（PostgreSQL）",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: 文档版本 **: v3.0 终极商用版",
+      "feature": "文档版本 **: v3.0 终极商用版",
+      "priority": "P2"
+    },
+    {
+      "star": "05_武曲星",
+      "task_name": "实现: ✅ 插件库v1.0",
+      "feature": "✅ 插件库v1.0",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: 接口路径 **：/api/v3/ziwei/knowledge_graph/user",
+      "feature": "接口路径 **：/api/v3/ziwei/knowledge_graph/user",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: 存储路径 **：/ziwei/knowledge_graph/user_personal/",
+      "feature": "存储路径 **：/ziwei/knowledge_graph/user_personal/",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: created_at: datetime",
+      "feature": "created_at: datetime",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: school: string",
+      "feature": "school: string",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: 核心代码 **：",
+      "feature": "核心代码 **：",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: Neo4j知识图谱存储",
+      "feature": "Neo4j知识图谱存储",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: Task-02",
+      "feature": "Task-02",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: user_id: string (主键)",
+      "feature": "user_id: string (主键)",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: 密级 **: 绝密·战略核心",
+      "feature": "密级 **: 绝密·战略核心",
+      "priority": "P2"
+    },
+    {
+      "star": "01_紫微帝星",
+      "task_name": "实现: 文档版本 **: v3.0 终极商用版",
+      "feature": "文档版本 **: v3.0 终极商用版",
+      "priority": "P2"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: 密级 **: 绝密·战略核心",
+      "feature": "密级 **: 绝密·战略核心",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: ✅ 存储引擎v1.0",
+      "feature": "✅ 存储引擎v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: ✅ 性能优化版本",
+      "feature": "✅ 性能优化版本",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: 数据加密（AES-256）",
+      "feature": "数据加密（AES-256）",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: 向量索引（Elasticsearch）",
+      "feature": "向量索引（Elasticsearch）",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: 文档版本 **: v3.0 终极商用版",
+      "feature": "文档版本 **: v3.0 终极商用版",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: ✅ 智能检索系统v1.0",
+      "feature": "✅ 智能检索系统v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: ✅ 特征提取系统v1.0",
+      "feature": "✅ 特征提取系统v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: 制定日期 **: 2026年3月21日",
+      "feature": "制定日期 **: 2026年3月21日",
+      "priority": "P1"
+    },
+    {
+      "star": "03_巨门星",
+      "task_name": "实现: 瞬时记忆（Redis）：当前会话上下文，TTL 1小时",
+      "feature": "瞬时记忆（Redis）：当前会话上下文，TTL 1小时",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: 密级 **: 绝密·战略核心",
+      "feature": "密级 **: 绝密·战略核心",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: ✅ 性能优化版本",
+      "feature": "✅ 性能优化版本",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: 情感分析（文本情感识别）",
+      "feature": "情感分析（文本情感识别）",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: 文档版本 **: v3.0 终极商用版",
+      "feature": "文档版本 **: v3.0 终极商用版",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: 制定日期 **: 2026年3月21日",
+      "feature": "制定日期 **: 2026年3月21日",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: ✅ 一致性保障系统v1.0",
+      "feature": "✅ 一致性保障系统v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: ✅ 微调引擎v1.0",
+      "feature": "✅ 微调引擎v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: ✅ 集成测试报告",
+      "feature": "✅ 集成测试报告",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: 人设状态管理",
+      "feature": "人设状态管理",
+      "priority": "P1"
+    },
+    {
+      "star": "04_廉贞星",
+      "task_name": "实现: ✅ 人格参数体系文档",
+      "feature": "✅ 人格参数体系文档",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 密级 **: 绝密·战略核心",
+      "feature": "密级 **: 绝密·战略核心",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: ✅ 错误处理系统v1.0",
+      "feature": "✅ 错误处理系统v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: ✅ 性能优化版本",
+      "feature": "✅ 性能优化版本",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 系统性能 **：",
+      "feature": "系统性能 **：",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 文档版本 **: v3.0 终极商用版",
+      "feature": "文档版本 **: v3.0 终极商用版",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: DAG功能 **：",
+      "feature": "DAG功能 **：",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 错误分类与策略",
+      "feature": "错误分类与策略",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 制定日期 **: 2026年3月21日",
+      "feature": "制定日期 **: 2026年3月21日",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 插件协同功能 **：",
+      "feature": "插件协同功能 **：",
+      "priority": "P1"
+    },
+    {
+      "star": "06_破军星",
+      "task_name": "实现: 有向无环图（DAG）引擎",
+      "feature": "有向无环图（DAG）引擎",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: ✅ 安全测试报告",
+      "feature": "✅ 安全测试报告",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: 密级 **: 绝密·战略核心",
+      "feature": "密级 **: 绝密·战略核心",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: 数据加密（AES-256）",
+      "feature": "数据加密（AES-256）",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: ✅ 权限系统v1.0",
+      "feature": "✅ 权限系统v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: 文档版本 **: v3.0 终极商用版",
+      "feature": "文档版本 **: v3.0 终极商用版",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: ✅ 等保三级认证证书",
+      "feature": "✅ 等保三级认证证书",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: 制定日期 **: 2026年3月21日",
+      "feature": "制定日期 **: 2026年3月21日",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: 传输加密（TLS 1.3）",
+      "feature": "传输加密（TLS 1.3）",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: ✅ 审计系统v1.0",
+      "feature": "✅ 审计系统v1.0",
+      "priority": "P1"
+    },
+    {
+      "star": "08_右弼星",
+      "task_name": "实现: ✅ 合规文档体系",
+      "feature": "✅ 合规文档体系",
+      "priority": "P1"
+    }
+  ]
+}

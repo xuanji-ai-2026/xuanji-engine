@@ -390,7 +390,7 @@ class CodeQualityInspector:
                         issues.append(f"检测到危险函数调用: {child.func.id}")
                     elif isinstance(child, ast.Attribute):
                         if child.attr in dangerous_calls:
-                        issues.append(f"检测到危险属性: {child.attr}")
+                            issues.append(f"检测到危险属性: {child.attr}")
         
         return issues
     
@@ -556,11 +556,11 @@ def main():
     all_issues = defaultdict(list)
     for m in metrics:
         for issue in m.quality_issues:
-            all_issues[f"{m.employee_name}({m.task_id})"]: issue]
+            all_issues[f"{m.employee_name}({m.task_id})"].append(issue)
         for issue in m.naming_issues:
-            all_issues[f"{m.employee_name}({m.task_id})"]: issue]
+            all_issues[f"{m.employee_name}({m.task_id})"].append(issue)
         for issue in m.security_issues:
-            all_issues[f"{m.employee_name}({m.task_id})"]: issue]
+            all_issues[f"{m.employee_name}({m.task_id})"].append(issue)
     
     if all_issues:
         print(f"\n📝 详细问题清单 (前20个):")
