@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户手册 | 玄玑引擎</title>
+    <meta name="description" content="玄玑引擎用户使用手册">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: 'Noto Sans SC', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0a0a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            padding-top: 80px;
+        }
+        
+        .container {
+            max-width: 7xl;
+            margin: 0 auto;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(255,255,255,0.02));
+            border-radius: 1.5rem;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        
+        .page-subtitle {
+            font-size: 1.5rem;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 3rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .content-text {
+            color: #d1d5db;
+            line-height: 1.8;
+        }
+        
+        .content-text p {
+            margin-bottom: 1rem;
+        }
+        
+        .content-text ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        .content-text li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .page-footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: #6b7280;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 0.5rem 1rem;
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            border-radius: 0.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .back-button:hover {
+            background: rgba(59, 130, 246, 0.4);
+        }
+        
+        .action-button {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border: none;
+            border-radius: 0.5rem;
+            color: #ffffff;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .action-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">用户手册</h1>
+            <p class="page-subtitle">玄玑引擎用户使用手册</p>
+        </div>
+        
+        
+                <h2 class="text-2xl font-bold text-white mb-4">快速开始</h2>
+                <div class="content-text">
+                    <p>1. 访问官网（http://xuanji-ai.com）</p><p>2. 点击右上角"创建数字人"按钮</p><p>3. 选择场景类型和性格</p><p>4. 完成创建，开始对话</p>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">常见问题</h2>
+                <div class="content-text">
+                    <p><strong>Q: 如何创建数字人？</strong></p><p>A: 点击官网右上角"创建数字人"按钮，按照提示填写信息，3分钟内即可完成创建。</p><p><strong>Q: 数字人可以修改吗？</strong></p><p>A: 可以！进入个人中心，随时修改数字人的姓名、头像、性格等属性。</p><p><strong>Q: 如何升级套餐？</strong></p><p>A: 进入"设置" -> "套餐管理"，选择想要的套餐，立即生效。</p><p><strong>Q: 如何使用API？</strong></p><p>A: 查看"文档" -> "API文档"，获取API密钥，按文档调用接口。</p>
+                </div>
+        
+        <div class="text-center">
+            <a href="/" class="back-button">← 返回首页</a>
+            <a href="contact.html" class="action-button">联系我们 →</a>
+        </div>
+        
+        <div class="page-footer">
+            <p>&copy; 2026 玄玑引擎. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
