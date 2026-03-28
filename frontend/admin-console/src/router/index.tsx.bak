@@ -1,0 +1,179 @@
+import { createBrowserRouter, Navigate } from 'react-router-dom'
+import MainLayout from '@/layouts/MainLayout'
+import Dashboard from '@/pages/Dashboard'
+
+// 系统初始化
+import SystemInit from '@/pages/SystemInit'
+import CreatorBinding from '@/pages/SystemInit/CreatorBinding'
+import StealthActivation from '@/pages/SystemInit/StealthActivation'
+
+// 用户管理
+import UserList from '@/pages/Users/UserList'
+import UserDetail from '@/pages/Users/UserDetail'
+import UserAuth from '@/pages/Users/UserAuth'
+import UserStatus from '@/pages/Users/UserStatus'
+import UserSearch from '@/pages/Users/UserSearch'
+
+// 数字人管理
+import DigitalHumanList from '@/pages/DigitalHumans/List'
+import DigitalHumanDetail from '@/pages/DigitalHumans/Detail'
+import DigitalHumanConfig from '@/pages/DigitalHumans/Config'
+import DigitalHumanStats from '@/pages/DigitalHumans/Stats'
+
+// 知识源管理
+import KnowledgeList from '@/pages/Knowledge/List'
+import KnowledgeConfig from '@/pages/Knowledge/Config'
+import KnowledgeStats from '@/pages/Knowledge/Stats'
+
+// 插件管理
+import PluginList from '@/pages/Plugins/List'
+import PluginReview from '@/pages/Plugins/Review'
+import PluginStats from '@/pages/Plugins/Stats'
+import PluginManage from '@/pages/Plugins/Manage'
+
+// 运营管理
+import OperationsOverview from '@/pages/Operations/Overview'
+import Maintenance from '@/pages/Operations/Maintenance'
+import Security from '@/pages/Operations/Security'
+import Analytics from '@/pages/Operations/Analytics'
+import CRM from '@/pages/Operations/CRM'
+import Marketing from '@/pages/Operations/Marketing'
+import Finance from '@/pages/Operations/Finance'
+
+// UI配置
+import UISettings from '@/pages/Settings/UISettings'
+import LogoSettings from '@/pages/Settings/LogoSettings'
+import ThemeSettings from '@/pages/Settings/ThemeSettings'
+import LayoutSettings from '@/pages/Settings/LayoutSettings'
+import AnimationSettings from '@/pages/Settings/AnimationSettings'
+
+// 更新管理
+import UpdateCenter from '@/pages/Updates/UpdateCenter'
+import VersionHistory from '@/pages/Updates/VersionHistory'
+import Announcements from '@/pages/Updates/Announcements'
+import PluginRecommendations from '@/pages/Updates/PluginRecommendations'
+
+// 智能助手小灵
+import Assistant from '@/pages/Assistant/Assistant'
+import SystemMonitor from '@/pages/Assistant/SystemMonitor'
+import Alerts from '@/pages/Assistant/Alerts'
+import DecisionSupport from '@/pages/Assistant/DecisionSupport'
+
+// 登录页面
+import Login from '@/pages/Login'
+
+const router = createBrowserRouter([
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/',
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Navigate to="/dashboard" replace />,
+      },
+      {
+        path: 'dashboard',
+        element: <Dashboard />,
+      },
+      // 系统初始化
+      {
+        path: 'system-init',
+        children: [
+          { index: true, element: <SystemInit /> },
+          { path: 'creator', element: <CreatorBinding /> },
+          { path: 'stealth', element: <StealthActivation /> },
+        ],
+      },
+      // 用户管理
+      {
+        path: 'users',
+        children: [
+          { index: true, element: <UserList /> },
+          { path: ':id', element: <UserDetail /> },
+          { path: 'auth', element: <UserAuth /> },
+          { path: 'status', element: <UserStatus /> },
+          { path: 'search', element: <UserSearch /> },
+        ],
+      },
+      // 数字人管理
+      {
+        path: 'digital-humans',
+        children: [
+          { index: true, element: <DigitalHumanList /> },
+          { path: ':id', element: <DigitalHumanDetail /> },
+          { path: ':id/config', element: <DigitalHumanConfig /> },
+          { path: ':id/stats', element: <DigitalHumanStats /> },
+        ],
+      },
+      // 知识源管理
+      {
+        path: 'knowledge',
+        children: [
+          { index: true, element: <KnowledgeList /> },
+          { path: ':id/config', element: <KnowledgeConfig /> },
+          { path: ':id/stats', element: <KnowledgeStats /> },
+        ],
+      },
+      // 插件管理
+      {
+        path: 'plugins',
+        children: [
+          { index: true, element: <PluginList /> },
+          { path: 'review', element: <PluginReview /> },
+          { path: 'stats', element: <PluginStats /> },
+          { path: 'manage', element: <PluginManage /> },
+        ],
+      },
+      // 运营管理
+      {
+        path: 'operations',
+        children: [
+          { index: true, element: <OperationsOverview /> },
+          { path: 'maintenance', element: <Maintenance /> },
+          { path: 'security', element: <Security /> },
+          { path: 'analytics', element: <Analytics /> },
+          { path: 'crm', element: <CRM /> },
+          { path: 'marketing', element: <Marketing /> },
+          { path: 'finance', element: <Finance /> },
+        ],
+      },
+      // UI配置
+      {
+        path: 'settings',
+        children: [
+          { index: true, element: <UISettings /> },
+          { path: 'logo', element: <LogoSettings /> },
+          { path: 'theme', element: <ThemeSettings /> },
+          { path: 'layout', element: <LayoutSettings /> },
+          { path: 'animation', element: <AnimationSettings /> },
+        ],
+      },
+      // 更新管理
+      {
+        path: 'updates',
+        children: [
+          { index: true, element: <UpdateCenter /> },
+          { path: 'history', element: <VersionHistory /> },
+          { path: 'announcements', element: <Announcements /> },
+          { path: 'recommendations', element: <PluginRecommendations /> },
+        ],
+      },
+      // 智能助手小灵
+      {
+        path: 'assistant',
+        children: [
+          { index: true, element: <Assistant /> },
+          { path: 'monitor', element: <SystemMonitor /> },
+          { path: 'alerts', element: <Alerts /> },
+          { path: 'decisions', element: <DecisionSupport /> },
+        ],
+      },
+    ],
+  },
+])
+
+export default router

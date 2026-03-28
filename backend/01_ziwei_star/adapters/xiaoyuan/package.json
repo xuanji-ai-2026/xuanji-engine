@@ -1,0 +1,64 @@
+{
+  "name": "@xuanji-ai/xiaoyuan-adapter",
+  "version": "1.0.0",
+  "description": "小元 - 开发者端智能助手适配层，提供 API 管理、插件开发、SDK 管理和代码审查等核心能力",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "xuanji",
+    "xiaoyuan",
+    "ai",
+    "developer-tools",
+    "api-management",
+    "code-review",
+    "sdk-management",
+    "plugin-development"
+  ],
+  "author": "Xuanji AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuanji-ai/xiaoyuan-adapter"
+  },
+  "bugs": {
+    "url": "https://github.com/xuanji-ai/xiaoyuan-adapter/issues"
+  },
+  "homepage": "https://docs.xuanji.ai/xiaoyuan",
+  "dependencies": {
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

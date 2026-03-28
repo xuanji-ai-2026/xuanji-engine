@@ -1,0 +1,25 @@
+{
+  "adapter": {
+    "name": "xiaowei",
+    "version": "1.0.0",
+    "description": "配置端智能助手适配层 - 小微",
+    "author": "玄玑引擎团队"
+  },
+  "core": {
+    "wsUrl": "ws://localhost:8001/ws",
+    "httpUrl": "http://localhost:8001"
+  },
+  "defaults": {
+    "timeout": 30000,
+    "logLevel": "info",
+    "maxReconnectAttempts": 5,
+    "reconnectDelay": 1000
+  },
+  "features": {
+    "configManagement": true,
+    "workbenchGuide": true,
+    "authHelper": true,
+    "userManager": true,
+    "batchOperations": true
+  }
+}

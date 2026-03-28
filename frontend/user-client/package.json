@@ -1,0 +1,44 @@
+{
+  "name": "xuanji-user-client",
+  "version": "1.0.0",
+  "description": "玄玑引擎用户端应用 - React + TypeScript + Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.4.0",
+    "axios": "^1.6.0",
+    "react-router-dom": "^6.20.0",
+    "@tanstack/react-query": "^5.0.0",
+    "dayjs": "^1.11.10",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "react-hook-form": "^7.48.0",
+    "zod": "^3.22.0",
+    "@hookform/resolvers": "^3.3.0",
+    "react-hot-toast": "^2.4.1",
+    "framer-motion": "^10.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.3.1",
+    "typescript": "^5.9.3",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "tailwindcss": "^3.4.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  }
+}

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+
+  * {
+    /* Remove problematic border class */
+  }
+
+  body {
+    /* @apply bg-background text-foreground; */
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .btn {
+    /* @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50; */
+  }
+
+  .btn-primary {
+    /* @apply btn bg-primary-600 text-white hover:bg-primary-700 h-10 px-4 py-2; */
+  }
+
+  .btn-secondary {
+    /* @apply btn bg-secondary-600 text-white hover:bg-secondary-700 h-10 px-4 py-2; */
+  }
+
+  .btn-outline {
+    /* @apply btn border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2; */
+  }
+
+  .btn-ghost {
+    /* @apply btn hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2; */
+  }
+
+  .card {
+    /* @apply rounded-lg border bg-card text-card-foreground shadow-sm; */
+  }
+
+  .input {
+    /* @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50; */
+  }
+
+  .textarea {
+    /* @apply flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50; */
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-override-style: none;
+    scrollbar-width: none;
+  }
+}

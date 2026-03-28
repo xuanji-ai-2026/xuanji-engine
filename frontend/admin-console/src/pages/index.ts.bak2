@@ -1,0 +1,46 @@
+// 用户管理模块
+export { default as UserDetail } from './UserDetail'
+export { default as UserAuth } from './UserAuth'
+export { default as UserStatus } from './UserStatus'
+export { default as UserSearch } from './UserSearch'
+
+// 数字人模块
+export { default as DigitalHumanDetail } from './DigitalHumans/Detail'
+export { default as DigitalHumanConfig } from './DigitalHumans/Config'
+export { default as DigitalHumanStats } from './DigitalHumans/Stats'
+
+// 知识源模块
+export { default as KnowledgeConfig } from './Knowledge/Config'
+export { default as KnowledgeStats } from './Knowledge/Stats'
+
+// 插件模块
+export { default as PluginReview } from './Plugins/Review'
+export { default as PluginStats } from './Plugins/Stats'
+export { default as PluginManage } from './Plugins/Manage'
+
+// 运营管理模块
+export { default as Maintenance } from './Operations/Maintenance'
+export { default as Security } from './Operations/Security'
+export { default as Analytics } from './Operations/Analytics'
+export { default as CRM } from './Operations/CRM'
+export { default as Marketing } from './Operations/Marketing'
+export { default as Finance } from './Operations/Finance'
+
+// UI配置模块
+export { default as UISettings } from './Settings/UISettings'
+export { default as LogoSettings } from './Settings/LogoSettings'
+export { default as ThemeSettings } from './Settings/ThemeSettings'
+export { default as LayoutSettings } from './Settings/LayoutSettings'
+export { default as AnimationSettings } from './Settings/AnimationSettings'
+
+// 更新管理模块
+export { default as UpdateCenter } from './Updates/UpdateCenter'
+export { default as VersionHistory } from './Updates/VersionHistory'
+export { default as Announcements } from './Updates/Announcements'
+export { default as PluginRecommendations } from './Updates/PluginRecommendations'
+
+// 智能助手小灵模块
+export { default as Assistant } from './Assistant/Assistant'
+export { default as SystemMonitor } from './Assistant/SystemMonitor'
+export { default as Alerts } from './Assistant/Alerts'
+export { default as DecisionSupport } from './Assistant/DecisionSupport'

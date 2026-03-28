@@ -1,0 +1,60 @@
+{
+  "name": "xuanji-xiaowei-adapter",
+  "version": "1.0.0",
+  "description": "配置端智能助手适配层 - 小微。让紫微元灵核心能力能够为配置端提供服务。",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "xuanji",
+    "xiaowei",
+    "adapter",
+    "ziwei",
+    "config",
+    "ai-assistant",
+    "typescript"
+  ],
+  "author": "玄玑引擎团队",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuanji-ai-2026/xuanji-engine.git"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "types",
+    "config",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
