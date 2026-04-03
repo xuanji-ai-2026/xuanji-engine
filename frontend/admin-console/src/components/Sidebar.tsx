@@ -151,13 +151,13 @@ function NavItem({
   item,
   collapsed,
   isActive,
+  onClick,
 }: {
   item: NavItem
   collapsed: boolean
   isActive: boolean
+  onClick?: () => void
 }) {
-  const { isMobile } = useBreakpoint()
-
   return (
     <Link
       to={item.href}
@@ -167,7 +167,7 @@ function NavItem({
           ? 'bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400'
           : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
       )}
-      onClick={() => isMobile && setMobileOpen(false)}
+      onClick={onClick}
     >
       <item.icon className="w-5 h-5 flex-shrink-0" />
       {!collapsed && (

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { DigitalHuman } from '@/types'
 
 export default function DigitalHumanDetail() {
@@ -41,9 +42,4 @@ export default function DigitalHumanDetail() {
       </div>
     </div>
   )
-}
-
-function useState<T>(initial: T): [T, any] {
-  const [value] = React.useState(initial)
-  return [value, () => {}]
 }
